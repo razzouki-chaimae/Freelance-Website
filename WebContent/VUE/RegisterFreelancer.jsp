@@ -107,7 +107,6 @@
 			                <div class="inner">
 			                	<div class="wizard-header">
 									<h3 class="heading">Infomations Personnelles</h3>
-									<p>Veuillez entrer vos informations et passer à l'étape suivante pour que nous puissions créer vos comptes.</p>
 								</div>
 								<div class="form-row">
 									<div class="form-holder">
@@ -143,7 +142,7 @@
 									<div class="form-holder form-holder-2">
 										<fieldset>
 											<legend>Mot de passe</legend>
-											<input type="password" name="your_password" id="your_email" class="form-control" pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" placeholder="........" required>
+											<input type="password" name="your_password" id="your_email" class="form-control"  placeholder="........" required>
 										</fieldset>
 									</div>
 								</div>
@@ -151,108 +150,10 @@
 									<div class="form-holder form-holder-2">
 										<fieldset>
 											<legend>Répéter le mot de passe</legend>
-											<input type="password" name="your_re_password" id="your_email" class="form-control" pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" placeholder="........" required>
+											<input type="password" name="your_re_password" id="your_email" class="form-control"  placeholder="........" required>
 										</fieldset>
 									</div>
 								</div>
-<!-- 								<div class="form-row">
-									<div class="form-holder form-holder-2">
-										<fieldset>
-											<legend>Numéro de téléphone</legend>
-											<input type="text" class="form-control" id="phone" name="phone" placeholder="+212 666-77-88-99" required>
-										</fieldset>
-									</div>
-								</div>
-								<div class="form-row form-row-date">
-									<div class="form-holder form-holder-2">
-										<label class="special-label">Date de naissance:</label>
-										<select name="day" id="month">
-											<option value="JJ" disabled selected>JJ</option>
-											<option value="16">01</option>
-											<option value="16">02</option>
-											<option value="16">03</option>
-											<option value="16">04</option>
-											<option value="16">05</option>
-											<option value="16">06</option>
-											<option value="16">07</option>
-											<option value="16">08</option>
-											<option value="17">09</option>
-											<option value="18">10</option>
-											<option value="19">11</option>
-											<option value="16">12</option>
-											<option value="16">13</option>
-											<option value="16">14</option>
-											<option value="16">15</option>
-											<option value="16">16</option>
-											<option value="16">17</option>
-											<option value="16">18</option>
-											<option value="16">19</option>
-											<option value="16">20</option>
-											<option value="16">21</option>
-											<option value="16">22</option>
-											<option value="16">23</option>
-											<option value="16">24</option>
-											<option value="16">25</option>
-											<option value="16">26</option>
-											<option value="16">27</option>
-											<option value="16">28</option>
-											<option value="16">29</option>
-											<option value="16">30</option>
-											<option value="16">31</option>
-										</select>
-										<select name="month" id="date">
-											<option value="MM" disabled selected>MM</option>
-											<option value="Feb">Jan</option>
-											<option value="Feb">Fev</option>
-											<option value="Mar">Mar</option>
-											<option value="Apr">Avr</option>
-											<option value="May">Mai</option>
-											<option value="Feb">Juin</option>
-											<option value="Feb">Juil</option>
-											<option value="Feb">Aou</option>
-											<option value="Feb">Sep</option>
-											<option value="Feb">Oct</option>
-											<option value="Feb">Nov</option>
-											<option value="Feb">Dec</option>
-										</select>
-										<select name="year" id="year">
-											<option value="AAAA" disabled selected>AAAA</option>
-											<option value="2017">2004</option>
-											<option value="2017">2003</option>
-											<option value="2016">2002</option>
-											<option value="2015">2001</option>
-											<option value="2014">2000</option>
-											<option value="2013">1999</option>
-											<option value="2013">1998</option>
-											<option value="2013">1997</option>
-											<option value="2013">1996</option>
-											<option value="2013">1995</option>
-											<option value="2013">1994</option>
-											<option value="2013">1993</option>
-											<option value="2013">1992</option>
-											<option value="2013">1991</option>
-											<option value="2013">1990</option>
-											<option value="2013">1989</option>
-											<option value="2013">1988</option>
-											<option value="2013">1987</option>
-											<option value="2013">1986</option>
-											<option value="2013">1985</option>
-											<option value="2013">1984</option>
-											<option value="2013">1983</option>
-											<option value="2013">1982</option>
-											<option value="2013">1981</option>
-											<option value="2013">1980</option>
-											<option value="2013">1979</option>
-											<option value="2013">1978</option>
-										</select>
-									</div>
-								</div>
-								<div class="form-row">
-									<div class="form-holder form-holder-2">
-										<input type="text" class="form-control input-border" id="ssn" name="ssn" placeholder="SSN" required>
-									</div>
-								</div>
-								 -->
 							</div>
 			            </section>
 						<!-- SECTION 2 -->
@@ -263,89 +164,66 @@
 			            <section>
 			                <div class="inner">
 			                	<div class="wizard-header">
-									<h3 class="heading">Connect Bank Account</h3>
-									<p>Please enter your infomation and proceed to the next step so we can build your accounts.</p>
+									<h3 class="heading">Infomations Professionelles</h3>
 								</div>
-								<div class="form-row">
-									<div class="form-holder form-holder-1">
-										<input type="text" name="find_bank" id="find_bank" placeholder="Find Your Bank" class="form-control" required>
+								 <div class="form-row">
+									<div class="form-holder form-holder-2">
+										<fieldset>
+											<legend>Profession</legend>
+											<input type="text" name="your_profession" id="your_profession" class="form-control" placeholder="UX Designer, Web Devekopper,..." required>
+										</fieldset>
 									</div>
 								</div>
-								<div class="form-row-total">
-									<div class="form-row">
-				                		<div class="form-holder form-holder-2 form-holder-3">
-				                			<input type="radio" class="radio" name="bank-1" id="bank-1" value="bank-1" checked>
-				                			<label class="bank-images label-above bank-1-label" for="bank-1">
-				                				<img src="images/form-v1-1.png" alt="bank-1">
-				                			</label>
-											<input type="radio" class="radio" name="bank-2" id="bank-2" value="bank-2">
-											<label class="bank-images label-above bank-2-label" for="bank-2">
-												<img src="images/form-v1-2.png" alt="bank-2">
-											</label>
-											<input type="radio" class="radio" name="bank-3" id="bank-3" value="bank-3">
-											<label class="bank-images label-above bank-3-label" for="bank-3">
-												<img src="images/form-v1-3.png" alt="bank-3">
-											</label>
-				                		</div>
-				                	</div>
-				                	<div class="form-row">
-				                		<div class="form-holder form-holder-2 form-holder-3">
-				                			<input type="radio" class="radio" name="bank-4" id="bank-4" value="bank-4">
-				                			<label class="bank-images bank-4-label" for="bank-4">
-				                				<img src="images/form-v1-4.png" alt="bank-4">
-				                			</label>
-											<input type="radio" class="radio" name="bank-5" id="bank-5" value="bank-5">
-											<label class="bank-images bank-5-label" for="bank-5">
-												<img src="images/form-v1-5.png" alt="bank-5">
-											</label>
-											<input type="radio" class="radio" name="bank-6" id="bank-6" value="bank-6">
-											<label class="bank-images bank-6-label" for="bank-6">
-												<img src="images/form-v1-6.png" alt="bank-6">
-											</label>
-				                		</div>
-				                	</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<fieldset>
+											<legend>Description</legend>
+											<textarea rows="10" cols="30" name="your_description" id="your_description" class="form-control" placeholder="Decrivez vous, les projets que vous aves réalisé..." required></textarea>
+										</fieldset>
+									</div>
 								</div>
 							</div>
 			            </section>
 			            <!-- SECTION 3 -->
 			            <h2>
 			            	<p class="step-icon"><span>03</span></p>
-			            	<span class="step-text">Set Financial Goals</span>
+			            	<span class="step-text">Informations Financières</span>
 			            </h2>
 			            <section>
 			                <div class="inner">
 			                	<div class="wizard-header">
-									<h3 class="heading">Set Financial Goals</h3>
-									<p>Please enter your infomation and proceed to the next step so we can build your accounts.</p>
+									<h3 class="heading">Informations Financières</h3>
+								</div>
+								 <div class="form-row">
+									<div class="form-holder form-holder-2">
+										<fieldset>
+											<legend>Le propriétaire de la carte de crédit</legend>
+											<input type="text" name="credit_card_owner" id="credit_card_owner" class="form-control" placeholder="Nom Prenom" required>
+										</fieldset>
+									</div>
 								</div>
 								<div class="form-row">
-			                		<div class="form-holder form-holder-2">
-			                			<input type="radio" class="radio" name="radio1" id="plan-1" value="plan-1">
-			                			<label class="plan-icon plan-1-label" for="plan-1">
-		                					<img src="images/form-v1-icon-2.png" alt="pay-1">
-			                			</label>
-			                			<div class="plan-total">
-		                					<span class="plan-title">Specific Plan</span>
-		                					<p class="plan-text">Pellentesque nec nam aliquam sem et volutpat consequat mauris nunc congue nisi.</p>
-		                				</div>
-			                			<input type="radio" class="radio" name="radio1" id="plan-2" value="plan-2">
-			                			<label class="plan-icon plan-2-label" for="plan-2">
-			                					<img src="images/form-v1-icon-2.png" alt="pay-1">
-			                			</label>
-			                			<div class="plan-total">
-		                					<span class="plan-title">Medium Plan</span>
-		                					<p class="plan-text">Pellentesque nec nam aliquam sem et volutpat consequat mauris nunc congue nisi.</p>
-		                				</div>
-										<input type="radio" class="radio" name="radio1" id="plan-3" value="plan-3" checked>
-										<label class="plan-icon plan-3-label" for="plan-3">
-		                					<img src="images/form-v1-icon-3.png" alt="pay-2">
-										</label>
-										<div class="plan-total">
-		                					<span class="plan-title">Special Plan</span>
-		                					<p class="plan-text">Pellentesque nec nam aliquam sem et volutpat consequat mauris nunc congue nisi.</p>
-		                				</div>
-			                		</div>
-			                	</div>
+									<div class="form-holder form-holder-2">
+										<fieldset>
+											<legend>Le numéro de la carte de crédit</legend>
+											<input type="text" name="credit_card_number" id="credit_card_number" class="form-control" pattern="[0-9]{16}" placeholder="1234 5678 9876 5432" required>
+										</fieldset>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder">
+										<fieldset>
+											<legend>Date d'expiration</legend>
+											<input type="text" class="form-control" id="expiry_date" name="expiry_date" pattern="[0-3][0-9]/[0-1][0-9]" placeholder="JJ/MM" required>
+										</fieldset>
+									</div>
+									<div class="form-holder">
+										<fieldset>
+											<legend>CVC / CVV</legend>
+											<input type="text" class="form-control" id="cvc_cvv" name="cvc_cvv" pattern="[0-9]" placeholder="123" required>
+										</fieldset>
+									</div>
+								</div>
 							</div>
 			            </section>
 		        	</div>
