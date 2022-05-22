@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+    line-height: 1.8;
+    color: #898FA1;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #2596be;
+}
+
+a {
+    font-weight: 700;
+    transition: all 0.4s ease;
+}
+
+img {
+    width: 100%;
+}
+
+small {
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.navbar {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.logo-text {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #2596be !important;
+}
+
+.navbar .nav-link {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: #f85090;
+}
+
+/* background: url(../img/Entrepreneurs\ make\ strategy\ for\ product\ -\ 640x427-croped-2.png); */
+#hero {
+    width: 100%;
+    height: 70vh;
+
+    min-height: 100vh;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+    display: flex;
+}
+/*align-items: center;*/
+
+#hero h1 {
+    font-weight: 700;
+}
+
+#hero p {
+    max-width: 550px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+/*margin: auto;*/
+
+.btn {
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 12px 24px;
+    border-radius: 13px;
+}
+
+.btn-brand {
+    background-color: #f85090;
+    color: #fff;
+}
+
+.btn-brand:hover {
+    background-color: #2596be;
+    color: #fff;
+}
+
+/************************************ added style *******************************************/
+.align-items-center {
+    align-items: center !important;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.container {
+    max-width: 1320px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+#hero p {
+    color: #484848;
+    margin-bottom: 50px;
+    font-size: 18px;
+}
+
+[data-aos][data-aos][data-aos-delay="800"].aos-animate, body[data-aos-delay="800"] [data-aos].aos-animate {
+    transition-delay: .8s;
+}
+
+#hero .btn-entreprise, #hero .btn-freelancer {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+#hero .btn-entreprise{
+    color: #2596be;
+    border: 2px solid #2596be;
+}
+
+#hero .btn-freelancer {
+    color: #f85090;
+    border: 2px solid #f85090;
+}
+
+#hero .btn-entreprise:hover {
+    transition: 0.5s;
+    color: #fff;
+    border: 2px solid #2596be;
+    background-color: #2596be;
+}
+
+#hero .btn-freelancer:hover {
+    transition: 0.5s;
+    color: #fff;
+    border: 2px solid #f85090;
+    background-color: #f85090;
+}
+
+a {
+    text-decoration: none;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
