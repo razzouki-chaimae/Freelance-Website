@@ -19,4 +19,14 @@
     <servlet-name>FreelancerController</servlet-name>
     <url-pattern>/FreelancerController</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RegisterFreelancerServlet</display-name>
+    <servlet-name>RegisterFreelancerServlet</servlet-name>
+    <servlet-class>controller.RegisterFreelancerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegisterFreelancerServlet</servlet-name>
+    <url-pattern>/RegisterFreelancerServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

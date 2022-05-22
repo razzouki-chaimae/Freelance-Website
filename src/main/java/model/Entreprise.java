@@ -8,14 +8,14 @@ public class Entreprise {
     private String numeroTelephone;
     private String adressePhysique;
     private String domaine;
-    private int rib ;
+    private long rib ;
     
     public Entreprise() {
         super();
         // TODO Auto-generated constructor stub
     }
     public Entreprise(String nomEntreprise, String emailEntreprise, String password, String numeroTelephone,
-            String adressePhysique, String domaine, int rib) {
+            String adressePhysique, String domaine, long rib) {
         super();
         this.nomEntreprise = nomEntreprise;
         this.emailEntreprise = emailEntreprise;
@@ -62,10 +62,10 @@ public class Entreprise {
     public void setDomaine(String domaine) {
         this.domaine = domaine;
     }
-    public int getRib() {
+    public long getRib() {
         return rib;
     }
-    public void setRib(int rib) {
+    public void setRib(long rib) {
         this.rib = rib;
     }
 

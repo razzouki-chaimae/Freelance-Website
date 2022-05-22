@@ -30,19 +30,19 @@ public class EntrepriseDAOImpl implements EntrepriseDAO {
         ps.setString(4, entreprise.getAdressePhysique());
         ps.setString(5, entreprise.getDomaine());
         ps.setString(6, entreprise.getPassword());
-        ps.setInt(7, entreprise.getRib());
+        ps.setLong(7, entreprise.getRib());
         int row = ps.executeUpdate();
         con.close();
         return row > 0;
     }
 
     @Override
-    public Entreprise getOneByRIB(int entreprise_RIB) throws SQLException {
+    public Entreprise getOneByRIB(Long entreprise_RIB) throws SQLException {
         Entreprise entreprise = new Entreprise();
         String query="SELECT * FROM entreprise WHERE `rib` = ?";
         con=Factory.dbConnect();
         ps=con.prepareStatement(query);
-        ps.setInt(1, entreprise_RIB);
+        ps.setLong(1, entreprise_RIB);
         rs=ps.executeQuery();
         rs.next();
         entreprise.setNomEntreprise(rs.getString("nomEntreprise"));
@@ -51,7 +51,7 @@ public class EntrepriseDAOImpl implements EntrepriseDAO {
         entreprise.setAdressePhysique(rs.getString("adressePhysique"));
         entreprise.setDomaine(rs.getString("domaine"));
         entreprise.setPassword(rs.getString("password"));
-        entreprise.setRib(rs.getInt("rib"));
+        entreprise.setRib(rs.getLong("rib"));
         con.close();
         return entreprise;
     }
@@ -71,7 +71,7 @@ public class EntrepriseDAOImpl implements EntrepriseDAO {
             entreprise.setAdressePhysique(rs.getString("adressePhysique"));
             entreprise.setDomaine(rs.getString("domaine"));
             entreprise.setPassword(rs.getString("password"));
-            entreprise.setRib(rs.getInt("rib"));
+            entreprise.setRib(rs.getLong("rib"));
             entreprises.add(entreprise);
         }
         con.close();
@@ -89,18 +89,18 @@ public class EntrepriseDAOImpl implements EntrepriseDAO {
         ps.setString(4, entreprise.getAdressePhysique());
         ps.setString(5, entreprise.getDomaine());
         ps.setString(6, entreprise.getPassword());
-        ps.setInt(7, entreprise.getRib());
+        ps.setLong(7, entreprise.getRib());
         int row = ps.executeUpdate();
         con.close();
         return row > 0;
     }
 
     @Override
-    public Boolean deleteByRIB(int entreprise_RIB) throws SQLException {
+    public Boolean deleteByRIB(Long entreprise_RIB) throws SQLException {
         String query = "DELETE FROM entreprise WHERE rib=?";
         con=Factory.dbConnect();
         ps=con.prepareStatement(query);
-        ps.setInt(1, entreprise_RIB);
+        ps.setLong(1, entreprise_RIB);
         int row = ps.executeUpdate();
         con.close();
         return row > 0;
@@ -123,7 +123,7 @@ public class EntrepriseDAOImpl implements EntrepriseDAO {
             entreprise.setAdressePhysique(rs.getString("adressePhysique"));
             entreprise.setDomaine(rs.getString("domaine"));
             entreprise.setPassword(rs.getString("password"));
-            entreprise.setRib(rs.getInt("rib"));
+            entreprise.setRib(rs.getLong("rib"));
         }
         con.close();
         return entreprise;

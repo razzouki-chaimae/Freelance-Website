@@ -396,7 +396,7 @@ body {
 }
 .inner .form-row.form-row-date .form-holder select#year {
     width: 27.28%;
-}
+}/*
 .inner .form-row .form-holder input::-webkit-input-placeholder { Chrome/Opera/Safari
   color: #666;
   font-size: 14px;
@@ -412,7 +412,7 @@ body {
 .inner .form-row .form-holder input:-moz-placeholder { Firefox 18-
   color: #666;
   font-size: 14px;
-}
+}*/
 .actions {
 	float: right;
     width: 540px;

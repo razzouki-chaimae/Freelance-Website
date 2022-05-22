@@ -96,7 +96,7 @@
   <div class="page-content">
 		<div class="form-v1-content">
 			<div class="wizard-form">
-		        <form class="form-register" action="#" method="post">
+		        <form class="form-register" action="../RegisterFreelancerServlet" method="post">
 		        	<div id="form-total">
 		        		<!-- SECTION 1 -->
 			            <h2>
@@ -112,13 +112,13 @@
 									<div class="form-holder">
 										<fieldset>
 											<legend>Nom</legend>
-											<input type="text" class="form-control" id="first-name" name="first-name" placeholder="Nom..." required>
+											<input type="text" class="form-control" id="last-name" name="first-name" placeholder="Nom..." required>
 										</fieldset>
 									</div>
 									<div class="form-holder">
 										<fieldset>
 											<legend>Prénom</legend>
-											<input type="text" class="form-control" id="last-name" name="last-name" placeholder="Prénom..." required>
+											<input type="text" class="form-control" id="first-name" name="last-name" placeholder="Prénom..." required>
 										</fieldset>
 									</div>
 								</div>
@@ -143,14 +143,6 @@
 										<fieldset>
 											<legend>Mot de passe</legend>
 											<input type="password" name="your_password" id="your_email" class="form-control"  placeholder="........" required>
-										</fieldset>
-									</div>
-								</div>
-								<div class="form-row">
-									<div class="form-holder form-holder-2">
-										<fieldset>
-											<legend>Répéter le mot de passe</legend>
-											<input type="password" name="your_re_password" id="your_email" class="form-control"  placeholder="........" required>
 										</fieldset>
 									</div>
 								</div>
@@ -220,13 +212,14 @@
 									<div class="form-holder">
 										<fieldset>
 											<legend>CVC / CVV</legend>
-											<input type="text" class="form-control" id="cvc_cvv" name="cvc_cvv" pattern="[0-9]" placeholder="123" required>
+											<input type="text" class="form-control" id="cvc_cvv" name="cvc_cvv" pattern="[0-9]{3}" placeholder="123" required>
 										</fieldset>
 									</div>
 								</div>
 							</div>
 			            </section>
 		        	</div>
+		        	<input type="submit" name="submit" id="submit" class="form-control" required>
 		        </form>
 			</div>
 		</div>

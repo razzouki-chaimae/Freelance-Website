@@ -30,19 +30,19 @@ public class FreelancerDAOImpl implements FreelancerDAO{
         ps.setString(5, freelancer.getAdressePhysique());
         ps.setString(6, freelancer.getProfession());
         ps.setString(7, freelancer.getDescription());
-        ps.setInt(8, freelancer.getRib());
+        ps.setLong(8, freelancer.getRib());
         int row = ps.executeUpdate();
         con.close();
         return row > 0;
     }
 
     @Override
-    public Freelancer getOneByRIB(int freelancer_RIB) throws SQLException {
+    public Freelancer getOneByRIB(Long freelancer_RIB) throws SQLException {
         Freelancer freelancer = new Freelancer();
         String query="SELECT * FROM freelancer WHERE `rib` = ?";
         con=Factory.dbConnect();
         ps=con.prepareStatement(query);
-        ps.setInt(1, freelancer_RIB);
+        ps.setLong(1, freelancer_RIB);
         rs=ps.executeQuery();
         rs.next();
         freelancer.setNom(rs.getString("nom"));
@@ -52,7 +52,7 @@ public class FreelancerDAOImpl implements FreelancerDAO{
         freelancer.setAdressePhysique(rs.getString("adressePhysique"));
         freelancer.setProfession(rs.getString("profession"));
         freelancer.setDescription(rs.getString("description"));
-        freelancer.setRib(rs.getInt("rib"));
+        freelancer.setRib(rs.getLong("rib"));
         con.close();
         return freelancer;
     }
@@ -73,7 +73,7 @@ public class FreelancerDAOImpl implements FreelancerDAO{
             freelancer.setAdressePhysique(rs.getString("adressePhysique"));
             freelancer.setProfession(rs.getString("profession"));
             freelancer.setDescription(rs.getString("description"));
-            freelancer.setRib(rs.getInt("rib"));
+            freelancer.setRib(rs.getLong("rib"));
             freelancers.add(freelancer);
         }
         con.close();
@@ -92,18 +92,18 @@ public class FreelancerDAOImpl implements FreelancerDAO{
         ps.setString(5, freelancer.getAdressePhysique());
         ps.setString(6, freelancer.getProfession());
         ps.setString(7, freelancer.getDescription());
-        ps.setInt(8, freelancer.getRib());
+        ps.setLong(8, freelancer.getRib());
         int row = ps.executeUpdate();
         con.close();
         return row > 0;
     }
 
     @Override
-    public Boolean deleteByRIB(int freelancer_RIB) throws SQLException {
+    public Boolean deleteByRIB(Long freelancer_RIB) throws SQLException {
         String query = "DELETE FROM freelancer WHERE rib=?";
         con=Factory.dbConnect();
         ps=con.prepareStatement(query);
-        ps.setInt(1, freelancer_RIB);
+        ps.setLong(1, freelancer_RIB);
         int row = ps.executeUpdate();
         con.close();
         return row > 0;
@@ -127,7 +127,7 @@ public class FreelancerDAOImpl implements FreelancerDAO{
             freelancer.setAdressePhysique(rs.getString("adressePhysique"));
             freelancer.setProfession(rs.getString("profession"));
             freelancer.setDescription(rs.getString("description"));
-            freelancer.setRib(rs.getInt("rib"));
+            freelancer.setRib(rs.getLong("rib"));
         }
         con.close();
         return freelancer;

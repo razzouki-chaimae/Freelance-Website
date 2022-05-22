@@ -8,14 +8,14 @@ public class Freelancer {
     private String adressePhysique;
     private String profession;
     private String description;
-    private int rib;
+    private long rib;
     
     public Freelancer() {
         super();
         // TODO Auto-generated constructor stub
     }
     public Freelancer(String nom, String prenom, String email, String password, String adressePhysique,
-            String profession, String description, int rib) {
+            String profession, String description, long rib) {
         super();
         this.nom = nom;
         this.prenom = prenom;
@@ -69,10 +69,10 @@ public class Freelancer {
     public void setDescription(String description) {
         this.description = description;
     }
-    public int getRib() {
+    public long getRib() {
         return rib;
     }
-    public void setRib(int rib) {
+    public void setRib(long rib) {
         this.rib = rib;
     }
 

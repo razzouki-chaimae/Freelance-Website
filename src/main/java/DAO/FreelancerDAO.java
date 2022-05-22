@@ -11,14 +11,14 @@ public interface FreelancerDAO {
     Boolean add(Freelancer freelancer) throws SQLException;
     
     // Read Freelancer
-    Freelancer getOneByRIB(int freelancer_RIB) throws SQLException;
+    Freelancer getOneByRIB(Long freelancer_RIB) throws SQLException;
     Set<Freelancer> getAll() throws SQLException;
     
     // Update Freelancer
     Boolean update(Freelancer freelancer) throws SQLException;
     
     // Delete Freelancer
-    Boolean deleteByRIB(int freelancer_RIB) throws SQLException;
+    Boolean deleteByRIB(Long freelancer_RIB) throws SQLException;
     
     // authentifier Freelancer
     Freelancer authentifier(String email,String password) throws SQLException;
