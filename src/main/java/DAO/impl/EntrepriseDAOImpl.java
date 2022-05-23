@@ -109,7 +109,7 @@ public class EntrepriseDAOImpl implements EntrepriseDAO {
     @Override
     public Entreprise authentifier(String email, String password) throws SQLException {
         Entreprise entreprise = null;
-        String query="SELECT * FROM entreprise WHERE email like ? AND password like ?";
+        String query="SELECT * FROM entreprise WHERE emailEntreprise like ? AND password like ?";
         con=Factory.dbConnect();
         ps=con.prepareStatement(query);
         ps.setString(1, email);

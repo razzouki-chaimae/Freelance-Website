@@ -8,15 +8,15 @@ public class Offre {
     private double budget;
     private int deadline;
     private String skills;
-    private int entreprise;
-    private int freelancer;
+    private Long entreprise;
+    private Long freelancer;
     
     public Offre() {
         super();
         // TODO Auto-generated constructor stub
     }
     public Offre(int projectId, String titre, String description, double budget, int deadline, String skills,
-            int entreprise, int freelancer) {
+            Long entreprise, Long freelancer) {
         super();
         this.projectId = projectId;
         this.titre = titre;
@@ -64,16 +64,16 @@ public class Offre {
     public void setSkills(String skills) {
         this.skills = skills;
     }
-    public int getEntreprise() {
+    public Long getEntreprise() {
         return entreprise;
     }
-    public void setEntreprise(int entreprise) {
+    public void setEntreprise(Long entreprise) {
         this.entreprise = entreprise;
     }
-    public int getFreelancer() {
+    public Long getFreelancer() {
         return freelancer;
     }
-    public void setFreelancer(int freelancer) {
+    public void setFreelancer(Long freelancer) {
         this.freelancer = freelancer;
     }
 

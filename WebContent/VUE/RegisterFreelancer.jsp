@@ -84,7 +84,7 @@
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="getstarted scrollto" href="#about">Se connecter</a></li>
+          <li><a class="getstarted scrollto" href="Login.jsp">Se connecter</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -206,7 +206,7 @@
 									<div class="form-holder">
 										<fieldset>
 											<legend>Date d'expiration</legend>
-											<input type="text" class="form-control" id="expiry_date" name="expiry_date" pattern="[0-3][0-9]/[0-1][0-9]" placeholder="JJ/MM" required>
+											<input type="text" class="form-control" id="expiry_date" name="expiry_date" pattern="[0-1][0-9]/[2-3][0-9]" placeholder="MM/AA" required>
 										</fieldset>
 									</div>
 									<div class="form-holder">

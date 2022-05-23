@@ -30,8 +30,8 @@ public class OffreDAOImpl implements OffreDAO {
         ps.setDouble(4, offre.getBudget());
         ps.setInt(5, offre.getDeadline());
         ps.setString(6, offre.getSkills());
-        ps.setInt(7, offre.getEntreprise());
-        ps.setInt(8, offre.getFreelancer());
+        ps.setLong(7, offre.getEntreprise());
+        ps.setLong(8, offre.getFreelancer());
         int row = ps.executeUpdate();
         con.close();
         return row > 0;
@@ -52,8 +52,8 @@ public class OffreDAOImpl implements OffreDAO {
         offre.setBudget(rs.getDouble("budget"));
         offre.setDeadline(rs.getInt("deadline"));
         offre.setSkills(rs.getString("skills"));
-        offre.setEntreprise(rs.getInt("entreprise"));
-        offre.setFreelancer(rs.getInt("freelancer"));
+        offre.setEntreprise(rs.getLong("entreprise"));
+        offre.setFreelancer(rs.getLong("freelancer"));
         con.close();
         return offre;
     }
@@ -73,8 +73,8 @@ public class OffreDAOImpl implements OffreDAO {
             offre.setBudget(rs.getDouble("budget"));
             offre.setDeadline(rs.getInt("deadline"));
             offre.setSkills(rs.getString("skills"));
-            offre.setEntreprise(rs.getInt("entreprise"));
-            offre.setFreelancer(rs.getInt("freelancer"));
+            offre.setEntreprise(rs.getLong("entreprise"));
+            offre.setFreelancer(rs.getLong("freelancer"));
             offres.add(offre);
         }
         con.close();
@@ -91,8 +91,8 @@ public class OffreDAOImpl implements OffreDAO {
         ps.setDouble(3, offre.getBudget());
         ps.setInt(4, offre.getDeadline());
         ps.setString(5, offre.getSkills());
-        ps.setInt(6, offre.getEntreprise());
-        ps.setInt(7, offre.getFreelancer());
+        ps.setLong(6, offre.getEntreprise());
+        ps.setLong(7, offre.getFreelancer());
         ps.setInt(8, offre.getProjectId());
         int row = ps.executeUpdate();
         con.close();
