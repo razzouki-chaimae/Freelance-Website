@@ -64,7 +64,8 @@ public class LoginServlet extends HttpServlet {
             if(freelancer!= null) {
                 HttpSession session = request.getSession();
                 session.setAttribute("user", freelancer);
-                out.println("Bienvenu "+ freelancer.getPrenom());
+                //out.println("Bienvenu "+ freelancer.getPrenom());
+                this.getServletContext().getRequestDispatcher("/ProfileFreelancer").forward(request, response);
             } else {
                 Entreprise entreprise = entrepriseDAO.authentifier(email, password);
                 if(entreprise != null) {

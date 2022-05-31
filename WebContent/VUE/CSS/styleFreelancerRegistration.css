@@ -471,7 +471,8 @@ body {
 /* Responsive */
 @media screen and (max-width: 1199px) {
 	.form-v1-content {
-		margin: 180px 20px;
+		margin-top: 130px;
+		margin-bottom: 40px;
 	}
 }
 @media screen and (max-width: 991px) {

@@ -132,9 +132,15 @@
 									</div>
 								</div>
 							</div>
+							<div class="form-row">
+							<div class="form-holder container-login100-form-btn">
+								<fieldset>
+									<input  type="submit" name="submit" id="submit" class="form-control login100-form-btn" required>
+								</fieldset>
+							</div>
+						</div>
 			            </section>
 		        	</div>
-		        	<input type="submit" name="submit" id="submit" class="form-control" required>
 		        </form>
 			</div>
 		</div>

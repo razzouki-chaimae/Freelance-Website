@@ -9,23 +9,23 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="img/Freelancing-removebg-preview.png" rel="icon">
-  <link href="img/Freelancing-removebg-preview.png" rel="apple-touch-icon">
+  <link href="/freelanceProject/VUE/img/Freelancing-removebg-preview.png" rel="icon">
+  <link href="/freelanceProject/VUE/img/Freelancing-removebg-preview.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="/freelanceProject/VUE/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/freelanceProject/VUE/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/freelanceProject/VUE/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/freelanceProject/VUE/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/freelanceProject/VUE/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/freelanceProject/VUE/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="/freelanceProject/VUE/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="/freelanceProject/VUE/assets/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Vesperr - v4.7.0

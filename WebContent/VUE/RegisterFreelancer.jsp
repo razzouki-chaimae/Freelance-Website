@@ -144,17 +144,17 @@
 											<input type="text" class="form-control" id="expiry_date" name="expiry_date" pattern="[0-1][0-9]/[2-3][0-9]" placeholder="MM/AA" required>
 										</fieldset>
 									</div>
-									<div class="form-holder">
-										<fieldset>
-											<legend>CVC / CVV</legend>
-											<input type="text" class="form-control" id="cvc_cvv" name="cvc_cvv" pattern="[0-9]{3}" placeholder="123" required>
-										</fieldset>
-									</div>
 								</div>
 							</div>
+							<div class="form-row">
+							<div class="form-holder container-login100-form-btn">
+								<fieldset>
+									<input  type="submit" name="submit" id="submit" class="form-control login100-form-btn" required>
+								</fieldset>
+							</div>
+						</div>
 			            </section>
 		        	</div>
-		        	<input type="submit" name="submit" id="submit" class="form-control" required>
 		        </form>
 			</div>
 		</div>
