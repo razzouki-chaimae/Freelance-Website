@@ -31,7 +31,7 @@
   <div class="page-content">
 		<div class="form-v1-content">
 			<div class="wizard-form">
-		        <form class="form-register" action="../RegisterFreelancerServlet" method="post">
+		        <form class="form-register" action="/freelanceProject/RegisterFreelancerServlet" method="post">
 		        	<div id="form-total">
 		        		<!-- SECTION 1 -->
 			            <h2>
@@ -144,10 +144,16 @@
 											<input type="text" class="form-control" id="expiry_date" name="expiry_date" pattern="[0-1][0-9]/[2-3][0-9]" placeholder="MM/AA" required>
 										</fieldset>
 									</div>
+									<div class="form-holder">
+										<fieldset>
+											<legend>CVC / CVV</legend>
+											<input type="text" class="form-control" id="cvc_cvv" name="cvc_cvv" pattern="[0-9]{3}" placeholder="123" required>
+										</fieldset>
+									</div>
 								</div>
 							</div>
 							<div class="form-row">
-							<div class="form-holder container-login100-form-btn">
+							<div class="form-holder container-login100-form-btn d-flex justify-content-center">
 								<fieldset>
 									<input  type="submit" name="submit" id="submit" class="form-control login100-form-btn" required>
 								</fieldset>

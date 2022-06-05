@@ -39,6 +39,11 @@
   <script src="/freelanceProject/VUE/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="/freelanceProject/VUE/assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="/freelanceProject/VUE/assets/vendor/php-email-form/validate.js"></script>
+  
+  
+  <script src="/freelanceProject/VUE/assetsProfileFreelancer/vendor/typed.js/typed.min.js"></script>
+  <!-- Template Main JS File -->
+  <script src="/freelanceProject/VUE/assetsProfileFreelancer/js/main.js"></script>
 
   <!-- Template Main JS File -->
   <script src="/freelanceProject/VUE/assets/js/main.js"></script>

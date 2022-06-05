@@ -5,34 +5,53 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import java.io.IOException;
+import model.Freelancer;
+import model.ImageFreelancer;
 
-/**
- * Servlet implementation class IndexServlet
- */
+import java.io.IOException;
+import java.sql.SQLException;
+import java.util.Set;
+
+import DAO.impl.FreelancerDAOImpl;
+import DAO.impl.ImageFreelancerDAOImpl;
+
 public class IndexServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	FreelancerDAOImpl freelancerDAO;
+	ImageFreelancerDAOImpl imageFreelancerDAO;
+    
+    @Override
+    public void init() throws ServletException {
+        // TODO Auto-generated method stub
+        this.freelancerDAO = new FreelancerDAOImpl();
+        this.imageFreelancerDAO = new ImageFreelancerDAOImpl();
+        super.init();
+    }
        
     /**
      * @see HttpServlet#HttpServlet()
      */
     public IndexServlet() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
-	    this.getServletContext().getRequestDispatcher("/VUE/index.jsp").forward(request, response);
+	    try {
+            Set<Freelancer> freelancers = freelancerDAO.getAll();
+            request.setAttribute("freelancers", freelancers);
+            
+            Set<ImageFreelancer> imagesFreelancers = imageFreelancerDAO.getAll();
+            request.setAttribute("ImageUsers", imagesFreelancers);
+            
+            this.getServletContext().getRequestDispatcher("/VUE/index.jsp").forward(request, response);
+        } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
 	}
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);

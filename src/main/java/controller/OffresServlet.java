@@ -1,37 +1,33 @@
 package controller;
 
 import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import model.Freelancer;
+import model.Offre;
 
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.Set;
 
 import DAO.impl.FreelancerDAOImpl;
+import DAO.impl.OffreDAOImpl;
 
 /**
- * Servlet implementation class FreelancerController
+ * Servlet implementation class OffresServlet
  */
-public class FreelancerController extends HttpServlet {
+public class OffresServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	FreelancerDAOImpl freelancerDAO;
-	
-	@Override
-    public void init() throws ServletException {
-        // TODO Auto-generated method stub
-        this.freelancerDAO = new FreelancerDAOImpl();
-        super.init();
-    }
+	OffreDAOImpl offresDAO;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public FreelancerController() {
+    public OffresServlet() {
         super();
         // TODO Auto-generated constructor stub
+        offresDAO = new OffreDAOImpl();
     }
 
 	/**
@@ -41,16 +37,10 @@ public class FreelancerController extends HttpServlet {
 		// TODO Auto-generated method stub
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 	    try {
-            Set<Freelancer> freelancers = freelancerDAO.getAll();
-            
-            Freelancer[] arrayFreelancers = new Freelancer[4];
-            freelancers.toArray(arrayFreelancers);
-            
-            request.setAttribute("freelancers", arrayFreelancers);
-	        
-            //sendredirect fblast getRequestDispatcher
-            this.getServletContext().getRequestDispatcher("/VUE/ListAllFreelancers.jsp").forward(request, response);
-            
+            Set<Offre> offres = offresDAO.getAll();
+            System.out.println(offres);
+            request.setAttribute("offres", offres);
+            request.getRequestDispatcher("/VUE/Offres.jsp").forward(request, response);
         } catch (SQLException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();

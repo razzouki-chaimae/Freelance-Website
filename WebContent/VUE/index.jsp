@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,7 +20,7 @@
       <div class="row">
         <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
           <h1 data-aos="fade-up">Le bon freelancer pour le bon service</h1>
-          <h2 data-aos="fade-up" data-aos-delay="400">la meilleure plateforme pour mettre en relation le meilleur freelancer avec le bon service.</h2>
+          <h4 data-aos="fade-up" data-aos-delay="400">la meilleure plateforme pour mettre en relation le meilleur freelancer avec le bon service afin de développer votre entreprise, votre marque ou votre rêve.</h4>
           <div data-aos="fade-up" data-aos-delay="800">
             <a href="/freelanceProject/VUE/RegisterEntreprise.jsp" class="btn-get-started scrollto" id="register-entreprise">Embaucher un freelancer</a>
             <a href="/freelanceProject/VUE/RegisterFreelancer.jsp" class="btn-get-started scrollto" id="register-freelancer">Travailler comme freelancer</a>
@@ -75,28 +76,28 @@
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>About Us</h2>
+          <h2>À propos de nous</h2>
         </div>
 
         <div class="row content">
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+              Nous offrons une plateforme pour que chaque entreprise dans le monde puisse trouver le bon freelancer afin de 
+              développer son entreprise, sa marque ou son rêve.
             </p>
             <ul>
-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-              <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+              <li><i class="ri-check-double-line"></i> Nous initions la relation.</li>
+              <li><i class="ri-check-double-line"></i> Nous simplifions la relation.</li>
+              <li><i class="ri-check-double-line"></i> Nous sécurisons la relation.</li>
             </ul>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
             <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum.
+              Aujourd’hui, les meilleurs experts ne travaillent plus dans les grandes structures de services ou de conseil : 
+              ils sont freelances ou développent leurs talents dans des structures hyper-spécialisées. 
+              Les grandes organisations ont besoin de l’expertise et de l’agilité de ces talents pour réussir leur transformation. 
             </p>
-            <a href="#" class="btn-learn-more">Learn More</a>
+            <a href="#" class="btn-learn-more">En Savoir Plus</a>
           </div>
         </div>
 
@@ -119,7 +120,7 @@
                   <div class="count-box">
                     <i class="bi bi-emoji-smile"></i>
                     <span data-purecounter-start="0" data-purecounter-end="65" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong>Happy Clients</strong> consequuntur voluptas nostrum aliquid ipsam architecto ut.</p>
+                    <p><strong>Clients satisfaits</strong> grâce à la facilité avec laquelle ils peuvent atteindre leurs objectifs.</p>
                   </div>
                 </div>
 
@@ -127,7 +128,7 @@
                   <div class="count-box">
                     <i class="bi bi-journal-richtext"></i>
                     <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong>Projects</strong> adipisci atque cum quia aspernatur totam laudantium et quia dere tan</p>
+                    <p><strong>Matching</strong> entre entreprise et freelancer à travers notre plateforme.</p>
                   </div>
                 </div>
 
@@ -135,7 +136,7 @@
                   <div class="count-box">
                     <i class="bi bi-clock"></i>
                     <span data-purecounter-start="0" data-purecounter-end="18" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong>Years of experience</strong> aut commodi quaerat modi aliquam nam ducimus aut voluptate non vel</p>
+                    <p><strong>Années d'expérience</strong> dans lesquels nous n'avons cessé d'améliorer notre service.</p>
                   </div>
                 </div>
 
@@ -143,7 +144,7 @@
                   <div class="count-box">
                     <i class="bi bi-award"></i>
                     <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong>Awards</strong> rerum asperiores dolor alias quo reprehenderit eum et nemo pad der</p>
+                    <p><strong>Prix</strong> obtenues grâce à la qualité du service que nous vous offrons.</p>
                   </div>
                 </div>
               </div>
@@ -160,39 +161,39 @@
 
         <div class="section-title" data-aos="fade-up">
           <h2>Services</h2>
-          <p>Magnam dolores commodi suscipit eius consequatur ex aliquid fug</p>
+          <p>Voici les services les plus fréquemment demandés dans notre plateforme</p>
         </div>
 
         <div class="row">
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+              <div class="icon"><i class="bi bi-phone"></i></div>
+              <h4 class="title"><a href="">Applications mobiles</a></h4>
+              <p class="description">Téléchargebles depuis AppStore et PlayStore et ayant des interfaces attractives.</p>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+              <div class="icon"><i class="bi bi-megaphone"></i></div>
+              <h4 class="title"><a href="">Marketing digital</a></h4>
+              <p class="description">Pour gérer vos réseaux sociaux professionnels tels que Facebook, Instagram et Youtube.</p>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4 class="title"><a href="">Magni Dolores</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+              <div class="icon"><i class="bi bi-vector-pen"></i></div>
+              <h4 class="title"><a href="">Graphic design</a></h4>
+              <p class="description">Logos, présentations, publicités, interfaces utilisateurs, Design graphique animé,...</p>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
               <div class="icon"><i class="bx bx-world"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+              <h4 class="title"><a href="">Sites web</a></h4>
+              <p class="description">Sites e-commerce, One-page, blog,... en utilisant les langages dédiés ou bien Wordprss.</p>
             </div>
           </div>
 
@@ -202,7 +203,7 @@
     </section><!-- End Services Section -->
 
     <!-- ======= More Services Section ======= -->
-    <section id="more-services" class="more-services">
+    <!-- <section id="more-services" class="more-services">
       <div class="container">
 
         <div class="row">
@@ -246,15 +247,16 @@
         </div>
 
       </div>
-    </section><!-- End More Services Section -->
+    </section> -->
+    <!-- End More Services Section -->
 
     <!-- ======= Features Section ======= -->
     <section id="features" class="features">
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Features</h2>
-          <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem</p>
+          <h2>FONCTIONNALITES</h2>
+          <p>Les fonctionnalités offertes par notre platefome regroupées par catégories</p>
         </div>
 
         <div class="row" data-aos="fade-up" data-aos-delay="300">
@@ -336,7 +338,7 @@
     </section><!-- End Features Section -->
 
     <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials section-bg">
+    <!-- <section id="testimonials" class="testimonials section-bg">
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
@@ -360,9 +362,10 @@
                   </p>
                 </div>
               </div>
-            </div><!-- End testimonial item -->
+            </div> -->
+            <!-- End testimonial item -->
 
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
                   <img src="/freelanceProject/VUE/assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
@@ -375,9 +378,10 @@
                   </p>
                 </div>
               </div>
-            </div><!-- End testimonial item -->
+            </div> -->
+            <!-- End testimonial item -->
 
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
                   <img src="/freelanceProject/VUE/assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
@@ -390,9 +394,10 @@
                   </p>
                 </div>
               </div>
-            </div><!-- End testimonial item -->
+            </div> -->
+            <!-- End testimonial item -->
 
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
                   <img src="/freelanceProject/VUE/assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
@@ -405,9 +410,10 @@
                   </p>
                 </div>
               </div>
-            </div><!-- End testimonial item -->
+            </div> -->
+            <!-- End testimonial item -->
 
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
                   <img src="/freelanceProject/VUE/assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
@@ -420,17 +426,19 @@
                   </p>
                 </div>
               </div>
-            </div><!-- End testimonial item -->
+            </div> -->
+            <!-- End testimonial item -->
 
-          </div>
+          <!-- </div>
           <div class="swiper-pagination"></div>
         </div>
 
       </div>
-    </section><!-- End Testimonials Section -->
+    </section> -->
+    <!-- End Testimonials Section -->
 
     <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
+    <!-- <section id="portfolio" class="portfolio">
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
@@ -580,23 +588,26 @@
         </div>
 
       </div>
-    </section><!-- End Portfolio Section -->
+    </section> -->
+    <!-- End Portfolio Section -->
 
     <!-- ======= Team Section ======= -->
     <section id="team" class="team section-bg">
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Team</h2>
-          <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem</p>
+          <h2>Best freelancers</h2>
+          <p>Les freelancers brillants qui utilisent souvent notr plateforme pour leur business</p>
         </div>
 
-        <div class="row">
-
+		<div class="row">
+		
+		 <c:forEach var="freelancer" items="${requestScope.freelancers}" end="3">
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="100">
               <div class="member-img">
-                <img src="/freelanceProject/VUE/assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                <img src="/freelanceProject/VUE/assetsProfileFreelancer/img/${ freelancer.rib }.jpg" class="img-fluid" alt="">
+                <!-- /freelanceProject/VUE/assets/img/team/team-1.jpg -->
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -605,65 +616,12 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
+                <h4><c:out value="${ freelancer.nom } ${ freelancer.prenom }" /></h4>
+                <span><c:out value="${ freelancer.profession }" /></span>
               </div>
             </div>
           </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="200">
-              <div class="member-img">
-                <img src="/freelanceProject/VUE/assets/img/team/team-2.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="300">
-              <div class="member-img">
-                <img src="/freelanceProject/VUE/assets/img/team/team-3.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="400">
-              <div class="member-img">
-                <img src="/freelanceProject/VUE/assets/img/team/team-4.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
-              </div>
-            </div>
-          </div>
+          </c:forEach>
 
         </div>
 
@@ -671,7 +629,7 @@
     </section><!-- End Team Section -->
 
     <!-- ======= Pricing Section ======= -->
-    <section id="pricing" class="pricing">
+    <!-- <section id="pricing" class="pricing">
       <div class="container">
 
         <div class="section-title">
@@ -735,7 +693,8 @@
         </div>
 
       </div>
-    </section><!-- End Pricing Section -->
+    </section> -->
+    <!-- End Pricing Section -->
 
     <!-- ======= F.A.Q Section ======= -->
     <section id="faq" class="faq">
@@ -813,15 +772,15 @@
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Contact Us</h2>
+          <h2>Contacter nous</h2>
         </div>
 
         <div class="row">
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="contact-about">
-              <h3>Vesperr</h3>
-              <p>Cras fermentum odio eu feugiat. Justo eget magna fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+              <h3>Freelancing</h3>
+              <p>la meilleure plateforme pour mettre en relation le meilleur freelancer avec le bon service afin de développer votre entreprise, votre marque ou votre rêve.</p>
               <div class="social-links">
                 <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
                 <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -835,17 +794,17 @@
             <div class="info">
               <div>
                 <i class="ri-map-pin-line"></i>
-                <p>A108 Adam Street<br>New York, NY 535022</p>
+                <p>Avenue Mohammed Ben Abdallah Regragui, Madinat Al Irfane, BP 713, Agdal Rabat, Maroc</p>
               </div>
 
               <div>
                 <i class="ri-mail-send-line"></i>
-                <p>info@example.com</p>
+                <p>n.mhirich@um5s.net.ma</p>
               </div>
 
               <div>
                 <i class="ri-phone-line"></i>
-                <p>+1 5589 55488 55s</p>
+                <p>(+212) 5 37 68 60 78</p>
               </div>
 
             </div>
@@ -870,7 +829,7 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit">Envoyer Message</button></div>
             </form>
           </div>
 

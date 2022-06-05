@@ -31,7 +31,7 @@
   <div class="page-content">
 		<div class="form-v1-content">
 			<div class="wizard-form">
-		        <form class="form-register" action="../RegisterEntrepriseServlet" method="post">
+		        <form class="form-register" action="<%= request.getContextPath() %>/RegisterEntrepriseServlet" method="post">
 		        	<div id="form-total">
 		        		<!-- SECTION 1 -->
 			            <h2>
@@ -133,7 +133,7 @@
 								</div>
 							</div>
 							<div class="form-row">
-							<div class="form-holder container-login100-form-btn">
+							<div class="form-holder container-login100-form-btn d-flex justify-content-center">
 								<fieldset>
 									<input  type="submit" name="submit" id="submit" class="form-control login100-form-btn" required>
 								</fieldset>

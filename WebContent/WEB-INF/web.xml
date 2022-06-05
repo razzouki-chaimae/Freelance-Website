@@ -70,4 +70,44 @@
     <servlet-name>ProfileFreelancerServlet</servlet-name>
     <url-pattern>/ProfileFreelancer</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ModificationFreelancerServlet</display-name>
+    <servlet-name>ModificationFreelancerServlet</servlet-name>
+    <servlet-class>controller.ModificationFreelancerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ModificationFreelancerServlet</servlet-name>
+    <url-pattern>/ModificationFreelancerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DeleteFreelancer</display-name>
+    <servlet-name>DeleteFreelancer</servlet-name>
+    <servlet-class>controller.DeleteFreelancer</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteFreelancer</servlet-name>
+    <url-pattern>/DeleteFreelancer</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LogoutFreelancerServlet</display-name>
+    <servlet-name>LogoutFreelancerServlet</servlet-name>
+    <servlet-class>controller.LogoutFreelancerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutFreelancerServlet</servlet-name>
+    <url-pattern>/LogoutFreelancerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>OffresServlet</display-name>
+    <servlet-name>OffresServlet</servlet-name>
+    <servlet-class>controller.OffresServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OffresServlet</servlet-name>
+    <url-pattern>/OffresServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

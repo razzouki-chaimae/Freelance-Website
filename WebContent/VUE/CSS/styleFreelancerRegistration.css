@@ -565,3 +565,12 @@ body {
 		margin-bottom: 0;
 	}
 }
+
+input#submit{
+    background: #f85090;
+    padding: 8px 25px;
+    margin-left: 30px;
+    border-radius: 50px;
+    color: #fff;
+    width: 130px;
+}

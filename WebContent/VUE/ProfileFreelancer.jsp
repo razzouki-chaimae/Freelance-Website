@@ -19,14 +19,14 @@
     <div class="container">
       <div class="hero-content">
         <h1>Je suis <span class="typed" data-typed-items="${sessionScope.user.nom} ${sessionScope.user.prenom}, ${sessionScope.user.profession}, Freelancer"></span></h1>
-        <p>Designer, Developer, Freelancer, Photographer</p>
-
+        <p>${sessionScope.user.nom} ${sessionScope.user.prenom}, ${sessionScope.user.profession}, Freelancer</p>
+<!--  
         <ul class="list-unstyled list-social">
           <li><a href="#"><i class="bi bi-facebook"></i></a></li>
           <li><a href="#"><i class="bi bi-twitter"></i></a></li>
           <li><a href="#"><i class="bi bi-instagram"></i></a></li>
           <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
-        </ul>
+        </ul>-->
       </div>
     </div>
   </div><!-- End Hero -->
@@ -41,17 +41,20 @@
           <div class="col-lg-4 ">
             <div class="div-img-bg">
               <div class="about-img">
-                <img src="/freelanceProject/VUE/assetsProfileFreelancer/img/me.jpg" class="img-responsive" alt="me">
+                <img src="${sessionScope.ImageUser.urlImange}" class="img-responsive" alt="me">
               </div>
             </div>
           </div>
 
           <div class="col-lg-7">
             <div class="about-descr">
-
+				
+				<p class="p-heading">${sessionScope.user.nom} ${sessionScope.user.prenom}</p>
+				<p class="separator">${sessionScope.user.description}</p>
+<!--  
               <p class="p-heading">im a ux /ui designer austin based who loves clean, simple & unique design. i also enjoy crafting brand identities, icons, & ilustration work. </p>
               <p class="separator">To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is. The European languages are members of the same family.English person.</p>
-
+-->
             </div>
 
           </div>
@@ -291,10 +294,8 @@
                 <h2 class="mb-30">GET IN TOUCH</h2>
 
                 <ul class="contact-details">
-                  <li><span>23 Main, Street</span></li>
-                  <li><span>New York, United States</span></li>
-                  <li><span>+88 01912704287</span></li>
-                  <li><span>example@example.com</span></li>
+                  <li><span>${sessionScope.user.adressePhysique}</span></li>
+                  <li><span>${sessionScope.user.email}</span></li>
                 </ul>
 
               </div>
@@ -349,7 +350,7 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <%@ include file="/VUE/FooterFreelancer.jsp" %>
+  <%@ include file="/VUE/Footer.jsp" %>
   <!-- End Footer -->
 
 

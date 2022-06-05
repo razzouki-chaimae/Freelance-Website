@@ -4,37 +4,37 @@
 <html>
 <head><meta charset="utf-8">
   
-  <%@ include file="Head.jsp" %>
+  <%@ include file="/VUE/Head.jsp" %>
   
   <!-- Template login -->
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrapLogin/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/freelanceProject/VUE/vendor/bootstrapLogin/css/bootstrap.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/freelanceProject/VUE/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="/freelanceProject/VUE/vendor/animate/animate.css">
 <!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="/freelanceProject/VUE/vendor/css-hamburgers/hamburgers.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="/freelanceProject/VUE/vendor/select2/select2.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="CSS/util.css">
-	<link rel="stylesheet" type="text/css" href="CSS/styleLogin.css">
+	<link rel="stylesheet" type="text/css" href="/freelanceProject/VUE/CSS/util.css">
+	<link rel="stylesheet" type="text/css" href="/freelanceProject/VUE/CSS/styleLogin.css">
 <!--===============================================================================================-->
 </head>
 <body>
   <!-- ======= Header ======= -->
-  <%@ include file="Header.jsp" %>
+  <%@ include file="/VUE/Header.jsp" %>
   
   <!-- ======= Login form ======= -->
   <div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
 				<div class="login100-pic js-tilt" data-tilt>
-					<img src="img/Webp-net-resizeimage.png" alt="IMG">
+					<img src="/freelanceProject/VUE/img/Webp-net-resizeimage.png" alt="IMG">
 				</div>
 
-				<form class="login100-form validate-form" action="../LoginServlet" method="POST">
+				<form class="login100-form validate-form" action="<%= request.getContextPath() %>/LoginServlet" method="POST">
 					<span class="login100-form-title">
 						Se connecter
 					</span>
@@ -62,7 +62,7 @@
 					</div>
 
 					<div class="text-center p-t-136">
-						<a class="txt2" href="index.jsp">
+						<a class="txt2" href="/freelanceProject/VUE/index.jsp">
 							Créer un compte
 							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
 						</a>
@@ -73,23 +73,23 @@
 	</div><!-- End Header -->
 
 <!--===============================================================================================-->	
-<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<script src="/freelanceProject/VUE/vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
-	<script src="vendor/bootstrapLogin/js/popper.js"></script>
-	<script src="vendor/bootstrapLogin/js/bootstrap.min.js"></script>
+	<script src="/freelanceProject/VUE/vendor/bootstrapLogin/js/popper.js"></script>
+	<script src="/freelanceProject/VUE/vendor/bootstrapLogin/js/bootstrap.min.js"></script>
 <!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
+	<script src="/freelanceProject/VUE/vendor/select2/select2.min.js"></script>
 <!--===============================================================================================-->
-	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script src="/freelanceProject/VUE/vendor/tilt/tilt.jquery.min.js"></script>
 	<script >
 		$('.js-tilt').tilt({
 			scale: 1.1
 		})
 	</script>
 <!--===============================================================================================-->
-	<script src="js/mainLogin.js"></script>
+	<script src="/freelanceProject/VUE/js/mainLogin.js"></script>
 	
 	  <!-- ======= Footer ======= -->
-	  <%@ include file="Footer.jsp" %>
+	  <%@ include file="/VUE/Footer.jsp" %>
 </body>
 </html>

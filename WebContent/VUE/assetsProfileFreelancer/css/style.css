@@ -56,12 +56,12 @@ p {
 }
 
 ::-moz-selection {
-  background: #b8a07e;
+  background: #3498db;
   color: #fff;
 }
 
 ::selection {
-  background: #b8a07e;
+  background: #3498db;
   color: #fff;
 }
 
@@ -107,8 +107,7 @@ p {
   padding-left: 10px;
   margin: 0 0 25px 0;
   line-height: 14px;
-  text-transform: uppercase;
-}
+}/*text-transform: uppercase;*/
 
 .form-control:focus {
   box-shadow: none;
@@ -130,7 +129,7 @@ p {
 }
 
 .hvr-shutter-in-horizontal:hover {
-  background: #b8a07e;
+  background: #3498db;
 }
 
 .mb-30 {
@@ -151,7 +150,7 @@ p {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #b8a07e;
+  background: #3498db;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -190,13 +189,12 @@ p {
   margin: 0;
   padding: 0;
   line-height: 1;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 1px;
-  font-family: "Playfair Display", sans-serif;
-  font-style: italic;
+  font-family: "Raleway", sans-serif;
 }
 #header .logo a {
-  color: #898989;
+  color:#000000;
 }
 #header .logo img {
   max-height: 40px;
@@ -244,7 +242,7 @@ p {
   margin-left: 5px;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #b8a07e;
+  color: #3498db;
 }
 .navbar .dropdown ul {
   display: block;
@@ -271,7 +269,7 @@ p {
   font-size: 12px;
 }
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #b8a07e;
+  color: #3498db;
 }
 .navbar .dropdown:hover > ul {
   opacity: 1;
@@ -356,7 +354,7 @@ p {
   color: #4b4a4a;
 }
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #b8a07e;
+  color: #3498db;
 }
 .navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
   margin: 15px;
@@ -382,7 +380,7 @@ p {
   font-size: 12px;
 }
 .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-  color: #b8a07e;
+  color: #3498db;
 }
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
@@ -411,7 +409,7 @@ p {
   font-weight: 700;
   margin-bottom: 10px;
   text-transform: uppercase;
-  color: #fff;
+  color: #d24b80;
 }
 
 .hero-content p {
@@ -492,13 +490,13 @@ p {
 #about {
   width: 100%;
   height: auto;
-  background: #f7f7f7;
+  background: #f3f9fd;
   padding-top: 120px;
 }
 
 #about .div-img-bg {
   padding-bottom: 30px;
-  border: 20px solid #b8a07e;
+  border: 20px solid #3498db;
 }
 
 #about .div-img-bg .about-img img {
@@ -527,7 +525,7 @@ p {
 # Services
 --------------------------------------------------------------*/
 #services {
-  background: #f7f7f7;
+  background: #f3f9fd;
   position: relative;
   padding-bottom: 80px;
 }
@@ -551,7 +549,7 @@ p {
 
 .services-block i {
   font-size: 44px;
-  color: #b8a07e;
+  color: #3498db;
   line-height: 44px;
 }
 
@@ -564,10 +562,10 @@ p {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #b8a07e;
+  border: 1px solid #3498db;
 }
 .services-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #b8a07e;
+  background-color: #3498db;
 }
 
 /*--------------------------------------------------------------
@@ -598,7 +596,7 @@ p {
   transition: all 0.3s ease-in-out;
 }
 #portfolio #portfolio-flters li:hover, #portfolio #portfolio-flters li.filter-active {
-  color: #b8a07e;
+  color: #3498db;
 }
 #portfolio #portfolio-flters li:last-child {
   margin-right: 0;
@@ -634,7 +632,7 @@ p {
   right: 40px;
   font-size: 24px;
   top: calc(50% - 18px);
-  color: #b8a07e;
+  color: #3498db;
 }
 #portfolio .portfolio-item .portfolio-info .preview-link:hover, #portfolio .portfolio-item .portfolio-info .details-link:hover {
   color: #cab89f;
@@ -665,10 +663,10 @@ p {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #b8a07e;
+  border: 1px solid #3498db;
 }
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #b8a07e;
+  background-color: #3498db;
 }
 .portfolio-details .portfolio-info {
   padding: 30px;
@@ -707,7 +705,7 @@ p {
 #journal, #journal-blog {
   height: auto;
   width: 100%;
-  background: #f7f7f7;
+  background: #f3f9fd;
   padding-bottom: 60px;
   position: relative;
 }
@@ -747,7 +745,7 @@ p {
 }
 
 .journal-block .journal-info .journal-txt h4 a:hover {
-  color: #b8a07e;
+  color: #3498db;
   transition: all 0.5s ease-in-out 0s;
 }
 
@@ -859,7 +857,7 @@ p {
 
 /* main content */
 .main-content {
-  background: #f7f7f7;
+  background: #f3f9fd;
 }
 
 .main-content .container-main {
@@ -889,7 +887,7 @@ p {
 }
 
 .journal-txt h4 a:hover {
-  color: #b8a07e;
+  color: #3498db;
   transition: all 0.5s ease-in-out 0s;
 }
 
@@ -973,14 +971,14 @@ blockquote {
   background-color: #f2f2f2;
   margin: 30px 0;
   border: none;
-  border-left: 4px solid #b8a07e;
+  border-left: 4px solid #3498db;
 }
 
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #f7f7f7;
+  background: #f3f9fd;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -1012,7 +1010,7 @@ blockquote {
 }
 
 #footer .socials-media ul li a:hover {
-  color: #b8a07e;
+  color: #3498db;
   transition: all 0.5s ease-in-out 0s;
 }
 
@@ -1054,7 +1052,7 @@ blockquote {
     float: none;
     width: 100%;
     text-align: center;
-    border-top: 1px solid #f7f7f7;
+    border-top: 1px solid #f3f9fd;
     line-height: 45px;
     margin-left: 0;
     padding-top: 10px;
@@ -1135,7 +1133,7 @@ blockquote {
     float: none;
     width: 100%;
     text-align: center;
-    border-top: 1px solid #f7f7f7;
+    border-top: 1px solid #f3f9fd;
     line-height: 45px;
     margin-left: 0;
     padding-top: 10px;
@@ -1216,7 +1214,7 @@ blockquote {
     float: none;
     width: 100%;
     text-align: center;
-    border-top: 1px solid #f7f7f7;
+    border-top: 1px solid #f3f9fd;
     line-height: 45px;
     margin-left: 0;
     padding-top: 10px;
@@ -1297,7 +1295,7 @@ blockquote {
     float: none;
     width: 100%;
     text-align: center;
-    border-top: 1px solid #f7f7f7;
+    border-top: 1px solid #f3f9fd;
     line-height: 45px;
     margin-left: 0;
     padding-top: 10px;
@@ -1377,7 +1375,7 @@ blockquote {
     float: none;
     width: 100%;
     text-align: center;
-    border-top: 1px solid #f7f7f7;
+    border-top: 1px solid #f3f9fd;
     line-height: 45px;
     margin-left: 0;
     padding-top: 10px;
