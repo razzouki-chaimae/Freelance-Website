@@ -66,13 +66,16 @@ public class LoginServlet extends HttpServlet {
                 HttpSession session = request.getSession();
                 session.setAttribute("user", freelancer);
                 //out.println("Bienvenu "+ freelancer.getPrenom());
-                this.getServletContext().getRequestDispatcher("/ProfileFreelancer").forward(request, response);
+                this.getServletContext().getRequestDispatcher("/OffresServlet").forward(request, response);
             } else {
                 Entreprise entreprise = entrepriseDAO.authentifier(email, password);
                 if(entreprise != null) {
                     HttpSession session = request.getSession();
                     session.setAttribute("user", entreprise);
-                    out.println("Bienvenu "+ entreprise.getNomEntreprise());
+                    //out.println("Bienvenu "+ entreprise.getNomEntreprise());
+                    //this.getServletContext().getRequestDispatcher("/AddOffreServlet").forward(request, response);
+                    //request.getRequestDispatcher("/VUE/AddOffre.jsp").forward(request, response);
+                    this.getServletContext().getRequestDispatcher("/ProfileEntrepriseServlet").forward(request, response);
                 } else {
                     //request.getRequestDispatcher("/LoginServlet").forward(request, response);
                     doGet(request, response);

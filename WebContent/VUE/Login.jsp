@@ -21,6 +21,7 @@
 	<link rel="stylesheet" type="text/css" href="/freelanceProject/VUE/CSS/util.css">
 	<link rel="stylesheet" type="text/css" href="/freelanceProject/VUE/CSS/styleLogin.css">
 <!--===============================================================================================-->
+<title>Se connecter</title>
 </head>
 <body>
   <!-- ======= Header ======= -->

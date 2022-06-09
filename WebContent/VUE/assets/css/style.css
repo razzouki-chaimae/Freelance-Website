@@ -587,6 +587,7 @@ section {
 # Services
 --------------------------------------------------------------*/
 .services .icon-box {
+  margin-bottom: 25px;
   padding: 30px;
   position: relative;
   overflow: hidden;
@@ -1382,3 +1383,56 @@ section {
 #footer .footer-links a:hover {
   color: #3498db;
 }
+
+#goToCompany{
+	text-decoration: underline;
+	cursor: pointer;
+	color: #ff64fb;
+}
+#btn-postuler .btn-get-started {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #FFF;
+    background:  #ff64fb;
+}
+#btn-postuler .btn-get-started:hover {
+	background:  #d24b80;
+}
+
+#info-entreprise{
+	margin-top: 150px;
+}
+
+
+#titre-old-offres {
+	margin-top: 130px;
+	position: relative;
+	display: inline-block;
+}
+#titre-old-offres::before, #titre-old-offres::after {
+	content: ' ';
+	display: block;
+	position: absolute; top: 50%; left: -120px;
+	width: 100px;
+	border-bottom: 1px solid #FFF;
+}
+#titre-old-offres::after {
+	left: auto; right: -120px;
+}
+
+
+#add-offre-form, #section-postulants {
+	margin-top: 130px;
+}
+
+#section-postulants {
+	margin-bottom: 70px;
+}
+
+/*SEARCH FORM*/

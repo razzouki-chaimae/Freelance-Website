@@ -20,8 +20,8 @@ public class EntrepriseDAOImpl implements EntrepriseDAO {
 
     @Override
     public Boolean add(Entreprise entreprise) throws SQLException {
-        String query="INSERT INTO entreprise (nomEntreprise, emailEntreprise, numeroTelephone, adressePhysique, domaine, password, rib) "
-                + "VALUES (?, ?, ?, ?, ?, ?, ?);";
+        String query="INSERT INTO entreprise (nomEntreprise, emailEntreprise, numeroTelephone, adressePhysique, domaine, description, password, rib) "
+                + "VALUES (?, ?, ?, ?, ?, ?, ?, ?);";
         con=Factory.dbConnect();
         ps=con.prepareStatement(query);
         ps.setString(1, entreprise.getNomEntreprise());
@@ -29,8 +29,9 @@ public class EntrepriseDAOImpl implements EntrepriseDAO {
         ps.setString(3, entreprise.getNumeroTelephone());
         ps.setString(4, entreprise.getAdressePhysique());
         ps.setString(5, entreprise.getDomaine());
-        ps.setString(6, entreprise.getPassword());
-        ps.setLong(7, entreprise.getRib());
+        ps.setString(6, entreprise.getDescription());
+        ps.setString(7, entreprise.getPassword());
+        ps.setLong(8, entreprise.getRib());
         int row = ps.executeUpdate();
         con.close();
         return row > 0;
@@ -50,6 +51,7 @@ public class EntrepriseDAOImpl implements EntrepriseDAO {
         entreprise.setNumeroTelephone(rs.getString("numeroTelephone"));
         entreprise.setAdressePhysique(rs.getString("adressePhysique"));
         entreprise.setDomaine(rs.getString("domaine"));
+        entreprise.setDescription(rs.getString("description"));
         entreprise.setPassword(rs.getString("password"));
         entreprise.setRib(rs.getLong("rib"));
         con.close();
@@ -70,6 +72,7 @@ public class EntrepriseDAOImpl implements EntrepriseDAO {
             entreprise.setNumeroTelephone(rs.getString("numeroTelephone"));
             entreprise.setAdressePhysique(rs.getString("adressePhysique"));
             entreprise.setDomaine(rs.getString("domaine"));
+            entreprise.setDescription(rs.getString("description"));
             entreprise.setPassword(rs.getString("password"));
             entreprise.setRib(rs.getLong("rib"));
             entreprises.add(entreprise);
@@ -80,7 +83,7 @@ public class EntrepriseDAOImpl implements EntrepriseDAO {
 
     @Override
     public Boolean update(Entreprise entreprise) throws SQLException {
-        String query = "UPDATE entreprise SET nomEntreprise = ?, emailEntreprise = ?, numeroTelephone = ?, adressePhysique = ?, domaine = ?, password = ? WHERE rib = ?";
+        String query = "UPDATE entreprise SET nomEntreprise = ?, emailEntreprise = ?, numeroTelephone = ?, adressePhysique = ?, domaine = ?, description = ?, password = ? WHERE rib = ?";
         con=Factory.dbConnect();
         ps=con.prepareStatement(query);
         ps.setString(1, entreprise.getNomEntreprise());
@@ -88,8 +91,9 @@ public class EntrepriseDAOImpl implements EntrepriseDAO {
         ps.setString(3, entreprise.getNumeroTelephone());
         ps.setString(4, entreprise.getAdressePhysique());
         ps.setString(5, entreprise.getDomaine());
-        ps.setString(6, entreprise.getPassword());
-        ps.setLong(7, entreprise.getRib());
+        ps.setString(6, entreprise.getDescription());
+        ps.setString(7, entreprise.getPassword());
+        ps.setLong(8, entreprise.getRib());
         int row = ps.executeUpdate();
         con.close();
         return row > 0;
@@ -122,6 +126,7 @@ public class EntrepriseDAOImpl implements EntrepriseDAO {
             entreprise.setNumeroTelephone(rs.getString("numeroTelephone"));
             entreprise.setAdressePhysique(rs.getString("adressePhysique"));
             entreprise.setDomaine(rs.getString("domaine"));
+            entreprise.setDescription(rs.getString("description"));
             entreprise.setPassword(rs.getString("password"));
             entreprise.setRib(rs.getLong("rib"));
         }

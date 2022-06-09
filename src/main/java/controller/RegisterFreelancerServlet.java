@@ -1,13 +1,18 @@
 package controller;
 
 import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.MultipartConfig;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
+import jakarta.servlet.http.Part;
 import model.Freelancer;
 
+import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.PrintWriter;
 import java.sql.SQLException;
 
@@ -65,9 +70,13 @@ public class RegisterFreelancerServlet extends HttpServlet {
 		String cvc_cvv = request.getParameter("cvc_cvv");
 		
 		try {
-            boolean addFreelancer = freelancerDAO.add(
-                    new Freelancer(nom, prenom, email, password, physical_address, profession, description, credit_card_number));
-            out.println("Bienvenu "+prenom);
+		    Freelancer freelancer = new Freelancer(nom, prenom, email, password, physical_address, profession, description, credit_card_number);
+            boolean addFreelancer = freelancerDAO.add(freelancer);
+            //out.println("Bienvenu "+prenom);
+            HttpSession session = request.getSession();
+            session.setAttribute("user", freelancer);
+            
+            this.getServletContext().getRequestDispatcher("/OffresServlet").forward(request, response);
         } catch (SQLException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();

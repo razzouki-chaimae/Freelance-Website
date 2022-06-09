@@ -13,6 +13,8 @@ public interface OffreDAO {
     // Read Offre
     Offre getOneById(int projectId) throws SQLException;
     Set<Offre> getAll() throws SQLException;
+    Set<Offre> getOffresByFreelancer(Long freelancer) throws SQLException;
+    Set<Offre> getOffresByEntreprise(Long entreprise) throws SQLException;
     
     // Update Entreprise
     Boolean update(Offre offre) throws SQLException;

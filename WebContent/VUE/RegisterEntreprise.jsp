@@ -20,6 +20,7 @@
 	<link rel="stylesheet" type="text/css" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
 	<!-- Main Style Css -->
     <link rel="stylesheet" href="CSS/styleFreelancerRegistration.css"/>
+<title>S'inscrire</title>
 </head>
 
 <body>
@@ -36,12 +37,12 @@
 		        		<!-- SECTION 1 -->
 			            <h2>
 			            	<p class="step-icon"><span>01</span></p>
-			            	<span class="step-text">Infomations Personnelles</span>
+			            	<span class="step-text">Informations d'identification</span>
 			            </h2>
 			            <section>
 			                <div class="inner">
 			                	<div class="wizard-header">
-									<h3 class="heading">Infomations Personnelles</h3>
+									<h3 class="heading">Informations d'identification</h3>
 								</div>
 								<div class="form-row">
 									<div class="form-holder">
@@ -54,14 +55,6 @@
 										<fieldset>
 											<legend>Numéro de téléphone</legend>
 											<input type="text" class="form-control" id="phone-number" name="phone-number" placeholder="+2126 77 88 99 00" required>
-										</fieldset>
-									</div>
-								</div>
-								<div class="form-row">
-									<div class="form-holder form-holder-2">
-										<fieldset>
-											<legend>Domaine de l'entreprise</legend>
-											<input type="text" name="company_domain" id="company_domain" class="form-control"  placeholder="Marketing digital, IT,..." required>
 										</fieldset>
 									</div>
 								</div>
@@ -86,6 +79,33 @@
 										<fieldset>
 											<legend>Mot de passe</legend>
 											<input type="password" name="company_password" id="company_email" class="form-control"  placeholder="........" required>
+										</fieldset>
+									</div>
+								</div>
+							</div>
+			            </section>
+			            <h2>
+			            	<p class="step-icon"><span>02</span></p>
+			            	<span class="step-text">Infomations du domaine</span>
+			            </h2>
+			            <section>
+			                <div class="inner">
+			                	<div class="wizard-header">
+									<h3 class="heading">Infomations du domaine</h3>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<fieldset>
+											<legend>Domaine de l'entreprise</legend>
+											<input type="text" name="company_domain" id="company_domain" class="form-control"  placeholder="Marketing digital, IT,..." required>
+										</fieldset>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<fieldset>
+											<legend>Description</legend>
+											<textarea rows="10" cols="30" name="company_description" id="company_description" class="form-control" placeholder="Decrivez les activités de votre entreprise, les services que vous offrez,..." required></textarea>
 										</fieldset>
 									</div>
 								</div>

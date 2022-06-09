@@ -3,7 +3,6 @@
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-<title>Freelancing</title>
 <meta content="" name="description">
 <meta content="" name="keywords">
 
@@ -50,3 +49,7 @@
   ======================================================== -->
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	
+
+
+<%@ include file="/VUE/HeadEntreprise.jsp" %>

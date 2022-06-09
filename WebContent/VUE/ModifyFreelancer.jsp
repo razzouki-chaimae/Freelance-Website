@@ -11,6 +11,7 @@
 		src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 	<script
 		src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<title>Modifier mon profile</title>
 </head>
 <body background="${sessionScope.ImageUser}">
   <!-- ======= Header ======= -->
@@ -19,9 +20,6 @@
   
   <!-- ======= Registration Form ======= -->
 	<div class="container contact-form">
-		<div class="contact-image">
-			<img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact" />
-		</div>
 		<form method="post" action="<%= request.getContextPath() %>/ModificationFreelancerServlet">
 			<h3>Modification du profile</h3>
 			<div class="row">

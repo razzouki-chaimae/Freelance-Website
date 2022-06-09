@@ -8,7 +8,7 @@
 
 		<div class="logo">
 			<h1>
-				<a href="/freelanceProject">Freelancing</a>
+				<a href="/freelanceProject" id="cible">Freelancing</a>
 			</h1>
 			<!-- Uncomment below if you prefer to use an image logo -->
 			<!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
@@ -16,16 +16,16 @@
 
 		<nav id="navbar" class="navbar">
 			<ul>
-				<li><a class="nav-link scrollto active"
+				<li><a class="nav-link scrollto"
 					href="/freelanceProject#hero">Home</a></li>
 				<li><a class="nav-link scrollto" href="/freelanceProject#about">À
 						propos</a></li>
 				<li><a class="nav-link scrollto"
 					href="/freelanceProject#services">Services</a></li>
-				<li><a class="nav-link scrollto "
+				<!-- <li><a class="nav-link scrollto "
 					href="/freelanceProject#features">Fonctionnalités</a></li>
 				<li><a class="nav-link scrollto" href="/freelanceProject#team">Équipe</a></li>
-				<!--          <li><a class="nav-link scrollto" href="/freelanceProject/VUE/index.jsp#pricing">Pricing</a></li>
+				         <li><a class="nav-link scrollto" href="/freelanceProject/VUE/index.jsp#pricing">Pricing</a></li>
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>

@@ -1,209 +1,282 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html lang="en">
 
- <head>
-   <%@ include file="Head.jsp" %>
- </head>
+<head>
+<%@ include file="Head.jsp"%>
+<title>Freelancing</title>
+</head>
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <%@ include file="Header.jsp" %>
+	<!-- ======= Header ======= -->
+	<%@ include file="Header.jsp"%>
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
+	<!-- ======= Hero Section ======= -->
+	<section id="hero" class="d-flex align-items-center">
 
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h1 data-aos="fade-up">Le bon freelancer pour le bon service</h1>
-          <h4 data-aos="fade-up" data-aos-delay="400">la meilleure plateforme pour mettre en relation le meilleur freelancer avec le bon service afin de développer votre entreprise, votre marque ou votre rêve.</h4>
-          <div data-aos="fade-up" data-aos-delay="800">
-            <a href="/freelanceProject/VUE/RegisterEntreprise.jsp" class="btn-get-started scrollto" id="register-entreprise">Embaucher un freelancer</a>
-            <a href="/freelanceProject/VUE/RegisterFreelancer.jsp" class="btn-get-started scrollto" id="register-freelancer">Travailler comme freelancer</a>
-          </div>
-        </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
-          <img src="/freelanceProject/VUE/img/Entrepreneurs make strategy for product - 640x427-croped.png" class="img-fluid animated" alt="">
-        </div>
-      </div>
-    </div>
+		<div class="container">
+			<div class="row">
+				<div
+					class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+					<h1 data-aos="fade-up">Le bon freelancer pour le bon service</h1>
+					<h4 data-aos="fade-up" data-aos-delay="400">la meilleure
+						plateforme pour mettre en relation le meilleur freelancer avec le
+						bon service afin de développer votre entreprise, votre marque ou
+						votre rêve.</h4>
+					<div data-aos="fade-up" data-aos-delay="800">
+						<a href="/freelanceProject/VUE/RegisterEntreprise.jsp"
+							class="btn-get-started scrollto" id="register-entreprise">Embaucher
+							un freelancer</a> <a
+							href="/freelanceProject/VUE/RegisterFreelancer.jsp"
+							class="btn-get-started scrollto" id="register-freelancer">Travailler
+							comme freelancer</a>
+					</div>
+				</div>
+				<div class="col-lg-6 order-1 order-lg-2 hero-img"
+					data-aos="fade-left" data-aos-delay="200">
+					<img
+						src="/freelanceProject/VUE/img/Entrepreneurs make strategy for product - 640x427-croped.png"
+						class="img-fluid animated" alt="">
+				</div>
+			</div>
+		</div>
 
-  </section><!-- End Hero -->
+	</section>
+	<!-- End Hero -->
 
-  <main id="main">
+	<main id="main">
 
-    <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients clients">
-      <div class="container">
+		<!-- ======= Clients Section ======= -->
+		<section id="clients" class="clients clients">
+			<div class="container">
 
-        <div class="row">
+				<div class="row">
 
-          <div class="col-lg-2 col-md-4 col-6">
-            <img src="/freelanceProject/VUE/assets/img/clients/client-1.png" class="img-fluid" alt="" data-aos="zoom-in">
-          </div>
+					<div class="col-lg-2 col-md-4 col-6">
+						<img src="/freelanceProject/VUE/assets/img/clients/client-1.png"
+							class="img-fluid" alt="" data-aos="zoom-in">
+					</div>
 
-          <div class="col-lg-2 col-md-4 col-6">
-            <img src="/freelanceProject/VUE/assets/img/clients/client-2.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
-          </div>
+					<div class="col-lg-2 col-md-4 col-6">
+						<img src="/freelanceProject/VUE/assets/img/clients/client-2.png"
+							class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+					</div>
 
-          <div class="col-lg-2 col-md-4 col-6">
-            <img src="/freelanceProject/VUE/assets/img/clients/client-3.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="200">
-          </div>
+					<div class="col-lg-2 col-md-4 col-6">
+						<img src="/freelanceProject/VUE/assets/img/clients/client-3.png"
+							class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="200">
+					</div>
 
-          <div class="col-lg-2 col-md-4 col-6">
-            <img src="/freelanceProject/VUE/assets/img/clients/client-4.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="300">
-          </div>
+					<div class="col-lg-2 col-md-4 col-6">
+						<img src="/freelanceProject/VUE/assets/img/clients/client-4.png"
+							class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="300">
+					</div>
 
-          <div class="col-lg-2 col-md-4 col-6">
-            <img src="/freelanceProject/VUE/assets/img/clients/client-5.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="400">
-          </div>
+					<div class="col-lg-2 col-md-4 col-6">
+						<img src="/freelanceProject/VUE/assets/img/clients/client-5.png"
+							class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="400">
+					</div>
 
-          <div class="col-lg-2 col-md-4 col-6">
-            <img src="/freelanceProject/VUE/assets/img/clients/client-6.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="500">
-          </div>
+					<div class="col-lg-2 col-md-4 col-6">
+						<img src="/freelanceProject/VUE/assets/img/clients/client-6.png"
+							class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="500">
+					</div>
 
-        </div>
+				</div>
 
-      </div>
-    </section><!-- End Clients Section -->
+			</div>
+		</section>
+		<!-- End Clients Section -->
 
-    <!-- ======= About Us Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
+		<!-- ======= About Us Section ======= -->
+		<section id="about" class="about">
+			<div class="container">
 
-        <div class="section-title" data-aos="fade-up">
-          <h2>À propos de nous</h2>
-        </div>
+				<div class="section-title" data-aos="fade-up">
+					<h2>À propos de nous</h2>
+				</div>
 
-        <div class="row content">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
-            <p>
-              Nous offrons une plateforme pour que chaque entreprise dans le monde puisse trouver le bon freelancer afin de 
-              développer son entreprise, sa marque ou son rêve.
-            </p>
-            <ul>
-              <li><i class="ri-check-double-line"></i> Nous initions la relation.</li>
-              <li><i class="ri-check-double-line"></i> Nous simplifions la relation.</li>
-              <li><i class="ri-check-double-line"></i> Nous sécurisons la relation.</li>
-            </ul>
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <p>
-              Aujourd’hui, les meilleurs experts ne travaillent plus dans les grandes structures de services ou de conseil : 
-              ils sont freelances ou développent leurs talents dans des structures hyper-spécialisées. 
-              Les grandes organisations ont besoin de l’expertise et de l’agilité de ces talents pour réussir leur transformation. 
-            </p>
-            <a href="#" class="btn-learn-more">En Savoir Plus</a>
-          </div>
-        </div>
+				<div class="row content">
+					<div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+						<p>Nous offrons une plateforme pour que chaque entreprise dans
+							le monde puisse trouver le bon freelancer afin de développer son
+							entreprise, sa marque ou son rêve.</p>
+						<ul>
+							<li><i class="ri-check-double-line"></i> Nous initions la
+								relation.</li>
+							<li><i class="ri-check-double-line"></i> Nous simplifions la
+								relation.</li>
+							<li><i class="ri-check-double-line"></i> Nous sécurisons la
+								relation.</li>
+						</ul>
+					</div>
+					<div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up"
+						data-aos-delay="300">
+						<p>Aujourd’hui, les meilleurs experts ne travaillent plus dans
+							les grandes structures de services ou de conseil : ils sont
+							freelances ou développent leurs talents dans des structures
+							hyper-spécialisées. Les grandes organisations ont besoin de
+							l’expertise et de l’agilité de ces talents pour réussir leur
+							transformation.</p>
+						<a href="#" class="btn-learn-more">En Savoir Plus</a>
+					</div>
+				</div>
 
-      </div>
-    </section><!-- End About Us Section -->
+			</div>
+		</section>
+		<!-- End About Us Section -->
 
-    <!-- ======= Counts Section ======= -->
-    <section id="counts" class="counts">
-      <div class="container">
+		<!-- ======= Counts Section ======= -->
+		<section id="counts" class="counts">
+			<div class="container">
 
-        <div class="row">
-          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-xl-start" data-aos="fade-right" data-aos-delay="150">
-            <img src="/freelanceProject/VUE/assets/img/counts-img.svg" alt="" class="img-fluid">
-          </div>
+				<div class="row">
+					<div
+						class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-xl-start"
+						data-aos="fade-right" data-aos-delay="150">
+						<img src="/freelanceProject/VUE/assets/img/counts-img.svg" alt=""
+							class="img-fluid">
+					</div>
 
-          <div class="col-xl-7 d-flex align-items-stretch pt-4 pt-xl-0" data-aos="fade-left" data-aos-delay="300">
-            <div class="content d-flex flex-column justify-content-center">
-              <div class="row">
-                <div class="col-md-6 d-md-flex align-items-md-stretch">
-                  <div class="count-box">
-                    <i class="bi bi-emoji-smile"></i>
-                    <span data-purecounter-start="0" data-purecounter-end="65" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong>Clients satisfaits</strong> grâce à la facilité avec laquelle ils peuvent atteindre leurs objectifs.</p>
-                  </div>
-                </div>
+					<div class="col-xl-7 d-flex align-items-stretch pt-4 pt-xl-0"
+						data-aos="fade-left" data-aos-delay="300">
+						<div class="content d-flex flex-column justify-content-center">
+							<div class="row">
+								<div class="col-md-6 d-md-flex align-items-md-stretch">
+									<div class="count-box">
+										<i class="bi bi-emoji-smile"></i> <span
+											data-purecounter-start="0" data-purecounter-end="65"
+											data-purecounter-duration="1" class="purecounter"></span>
+										<p>
+											<strong>Clients satisfaits</strong> grâce à la facilité avec
+											laquelle ils peuvent atteindre leurs objectifs.
+										</p>
+									</div>
+								</div>
 
-                <div class="col-md-6 d-md-flex align-items-md-stretch">
-                  <div class="count-box">
-                    <i class="bi bi-journal-richtext"></i>
-                    <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong>Matching</strong> entre entreprise et freelancer à travers notre plateforme.</p>
-                  </div>
-                </div>
+								<div class="col-md-6 d-md-flex align-items-md-stretch">
+									<div class="count-box">
+										<i class="bi bi-journal-richtext"></i> <span
+											data-purecounter-start="0" data-purecounter-end="85"
+											data-purecounter-duration="1" class="purecounter"></span>
+										<p>
+											<strong>Matching</strong> entre entreprise et freelancer à
+											travers notre plateforme.
+										</p>
+									</div>
+								</div>
 
-                <div class="col-md-6 d-md-flex align-items-md-stretch">
-                  <div class="count-box">
-                    <i class="bi bi-clock"></i>
-                    <span data-purecounter-start="0" data-purecounter-end="18" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong>Années d'expérience</strong> dans lesquels nous n'avons cessé d'améliorer notre service.</p>
-                  </div>
-                </div>
+								<div class="col-md-6 d-md-flex align-items-md-stretch">
+									<div class="count-box">
+										<i class="bi bi-clock"></i> <span data-purecounter-start="0"
+											data-purecounter-end="18" data-purecounter-duration="1"
+											class="purecounter"></span>
+										<p>
+											<strong>Années d'expérience</strong> dans lesquels nous
+											n'avons cessé d'améliorer notre service.
+										</p>
+									</div>
+								</div>
 
-                <div class="col-md-6 d-md-flex align-items-md-stretch">
-                  <div class="count-box">
-                    <i class="bi bi-award"></i>
-                    <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong>Prix</strong> obtenues grâce à la qualité du service que nous vous offrons.</p>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End .content-->
-          </div>
-        </div>
+								<div class="col-md-6 d-md-flex align-items-md-stretch">
+									<div class="count-box">
+										<i class="bi bi-award"></i> <span data-purecounter-start="0"
+											data-purecounter-end="15" data-purecounter-duration="1"
+											class="purecounter"></span>
+										<p>
+											<strong>Prix</strong> obtenues grâce à la qualité du service
+											que nous vous offrons.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End .content-->
+					</div>
+				</div>
 
-      </div>
-    </section><!-- End Counts Section -->
+			</div>
+		</section>
+		<!-- End Counts Section -->
 
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-      <div class="container">
+		<!-- ======= Services Section ======= -->
+		<section id="services" class="services">
+			<div class="container">
 
-        <div class="section-title" data-aos="fade-up">
-          <h2>Services</h2>
-          <p>Voici les services les plus fréquemment demandés dans notre plateforme</p>
-        </div>
+				<div class="section-title" data-aos="fade-up">
+					<h2>Services</h2>
+					<p>Voici les services les plus fréquemment demandés dans notre
+						plateforme</p>
+				</div>
 
-        <div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bi bi-phone"></i></div>
-              <h4 class="title"><a href="">Applications mobiles</a></h4>
-              <p class="description">Téléchargebles depuis AppStore et PlayStore et ayant des interfaces attractives.</p>
-            </div>
-          </div>
+				<div class="row">
+					<div
+						class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+						<div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+							<div class="icon">
+								<i class="bi bi-phone"></i>
+							</div>
+							<h4 class="title">
+								<a href="">Applications mobiles</a>
+							</h4>
+							<p class="description">Téléchargebles depuis AppStore et
+								PlayStore et ayant des interfaces attractives.</p>
+						</div>
+					</div>
 
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-              <div class="icon"><i class="bi bi-megaphone"></i></div>
-              <h4 class="title"><a href="">Marketing digital</a></h4>
-              <p class="description">Pour gérer vos réseaux sociaux professionnels tels que Facebook, Instagram et Youtube.</p>
-            </div>
-          </div>
+					<div
+						class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+						<div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+							<div class="icon">
+								<i class="bi bi-megaphone"></i>
+							</div>
+							<h4 class="title">
+								<a href="">Marketing digital</a>
+							</h4>
+							<p class="description">Pour gérer vos réseaux sociaux
+								professionnels tels que Facebook, Instagram et Youtube.</p>
+						</div>
+					</div>
 
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-              <div class="icon"><i class="bi bi-vector-pen"></i></div>
-              <h4 class="title"><a href="">Graphic design</a></h4>
-              <p class="description">Logos, présentations, publicités, interfaces utilisateurs, Design graphique animé,...</p>
-            </div>
-          </div>
+					<div
+						class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+						<div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+							<div class="icon">
+								<i class="bi bi-vector-pen"></i>
+							</div>
+							<h4 class="title">
+								<a href="">Graphic design</a>
+							</h4>
+							<p class="description">Logos, présentations, publicités,
+								interfaces utilisateurs, Design graphique animé,...</p>
+						</div>
+					</div>
 
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
-              <div class="icon"><i class="bx bx-world"></i></div>
-              <h4 class="title"><a href="">Sites web</a></h4>
-              <p class="description">Sites e-commerce, One-page, blog,... en utilisant les langages dédiés ou bien Wordprss.</p>
-            </div>
-          </div>
+					<div
+						class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+						<div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+							<div class="icon">
+								<i class="bx bx-world"></i>
+							</div>
+							<h4 class="title">
+								<a href="">Sites web</a>
+							</h4>
+							<p class="description">Sites e-commerce, One-page, blog,...
+								en utilisant les langages dédiés ou bien Wordprss.</p>
+						</div>
+					</div>
 
-        </div>
+				</div>
 
-      </div>
-    </section><!-- End Services Section -->
+			</div>
+		</section>
+		<!-- End Services Section -->
 
-    <!-- ======= More Services Section ======= -->
-    <!-- <section id="more-services" class="more-services">
+		<!-- ======= More Services Section ======= -->
+		<!-- <section id="more-services" class="more-services">
       <div class="container">
 
         <div class="row">
@@ -248,97 +321,123 @@
 
       </div>
     </section> -->
-    <!-- End More Services Section -->
+		<!-- End More Services Section -->
 
-    <!-- ======= Features Section ======= -->
-    <section id="features" class="features">
-      <div class="container">
+		<!-- ======= Features Section ======= -->
+		<!-- <section id="features" class="features">
+			<div class="container">
 
-        <div class="section-title" data-aos="fade-up">
-          <h2>FONCTIONNALITES</h2>
-          <p>Les fonctionnalités offertes par notre platefome regroupées par catégories</p>
-        </div>
+				<div class="section-title" data-aos="fade-up">
+					<h2>FONCTIONNALITES</h2>
+					<p>Les fonctionnalités offertes par notre platefome regroupées
+						par catégories</p>
+				</div>
 
-        <div class="row" data-aos="fade-up" data-aos-delay="300">
-          <div class="col-lg-3 col-md-4">
-            <div class="icon-box">
-              <i class="ri-store-line" style="color: #ffbb2c;"></i>
-              <h3><a href="">Lorem Ipsum</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <div class="icon-box">
-              <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
-              <h3><a href="">Dolor Sitema</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <div class="icon-box">
-              <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
-              <h3><a href="">Sed perspiciatis</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-            <div class="icon-box">
-              <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
-              <h3><a href="">Magni Dolores</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-database-2-line" style="color: #47aeff;"></i>
-              <h3><a href="">Nemo Enim</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
-              <h3><a href="">Eiusmod Tempor</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
-              <h3><a href="">Midela Teren</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
-              <h3><a href="">Pira Neve</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-anchor-line" style="color: #b2904f;"></i>
-              <h3><a href="">Dirada Pack</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-disc-line" style="color: #b20969;"></i>
-              <h3><a href="">Moton Ideal</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-base-station-line" style="color: #ff5828;"></i>
-              <h3><a href="">Verdo Park</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-fingerprint-line" style="color: #29cc61;"></i>
-              <h3><a href="">Flavor Nivelanda</a></h3>
-            </div>
-          </div>
-        </div>
+				<div class="row" data-aos="fade-up" data-aos-delay="300">
+					<div class="col-lg-3 col-md-4">
+						<div class="icon-box">
+							<i class="ri-store-line" style="color: #ffbb2c;"></i>
+							<h3>
+								<a href="">Lorem Ipsum</a>
+							</h3>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+						<div class="icon-box">
+							<i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
+							<h3>
+								<a href="">Dolor Sitema</a>
+							</h3>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+						<div class="icon-box">
+							<i class="ri-calendar-todo-line" style="color: #e80368;"></i>
+							<h3>
+								<a href="">Sed perspiciatis</a>
+							</h3>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+						<div class="icon-box">
+							<i class="ri-paint-brush-line" style="color: #e361ff;"></i>
+							<h3>
+								<a href="">Magni Dolores</a>
+							</h3>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 mt-4">
+						<div class="icon-box">
+							<i class="ri-database-2-line" style="color: #47aeff;"></i>
+							<h3>
+								<a href="">Nemo Enim</a>
+							</h3>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 mt-4">
+						<div class="icon-box">
+							<i class="ri-gradienter-line" style="color: #ffa76e;"></i>
+							<h3>
+								<a href="">Eiusmod Tempor</a>
+							</h3>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 mt-4">
+						<div class="icon-box">
+							<i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
+							<h3>
+								<a href="">Midela Teren</a>
+							</h3>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 mt-4">
+						<div class="icon-box">
+							<i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
+							<h3>
+								<a href="">Pira Neve</a>
+							</h3>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 mt-4">
+						<div class="icon-box">
+							<i class="ri-anchor-line" style="color: #b2904f;"></i>
+							<h3>
+								<a href="">Dirada Pack</a>
+							</h3>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 mt-4">
+						<div class="icon-box">
+							<i class="ri-disc-line" style="color: #b20969;"></i>
+							<h3>
+								<a href="">Moton Ideal</a>
+							</h3>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 mt-4">
+						<div class="icon-box">
+							<i class="ri-base-station-line" style="color: #ff5828;"></i>
+							<h3>
+								<a href="">Verdo Park</a>
+							</h3>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 mt-4">
+						<div class="icon-box">
+							<i class="ri-fingerprint-line" style="color: #29cc61;"></i>
+							<h3>
+								<a href="">Flavor Nivelanda</a>
+							</h3>
+						</div>
+					</div>
+				</div>
 
-      </div>
-    </section><!-- End Features Section -->
+			</div>
+		</section>
+		End Features Section -->
 
-    <!-- ======= Testimonials Section ======= -->
-    <!-- <section id="testimonials" class="testimonials section-bg">
+		<!-- ======= Testimonials Section ======= -->
+		<!-- <section id="testimonials" class="testimonials section-bg">
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
@@ -363,9 +462,9 @@
                 </div>
               </div>
             </div> -->
-            <!-- End testimonial item -->
+		<!-- End testimonial item -->
 
-            <!-- <div class="swiper-slide">
+		<!-- <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
                   <img src="/freelanceProject/VUE/assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
@@ -379,9 +478,9 @@
                 </div>
               </div>
             </div> -->
-            <!-- End testimonial item -->
+		<!-- End testimonial item -->
 
-            <!-- <div class="swiper-slide">
+		<!-- <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
                   <img src="/freelanceProject/VUE/assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
@@ -395,9 +494,9 @@
                 </div>
               </div>
             </div> -->
-            <!-- End testimonial item -->
+		<!-- End testimonial item -->
 
-            <!-- <div class="swiper-slide">
+		<!-- <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
                   <img src="/freelanceProject/VUE/assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
@@ -411,9 +510,9 @@
                 </div>
               </div>
             </div> -->
-            <!-- End testimonial item -->
+		<!-- End testimonial item -->
 
-            <!-- <div class="swiper-slide">
+		<!-- <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
                   <img src="/freelanceProject/VUE/assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
@@ -427,18 +526,18 @@
                 </div>
               </div>
             </div> -->
-            <!-- End testimonial item -->
+		<!-- End testimonial item -->
 
-          <!-- </div>
+		<!-- </div>
           <div class="swiper-pagination"></div>
         </div>
 
       </div>
     </section> -->
-    <!-- End Testimonials Section -->
+		<!-- End Testimonials Section -->
 
-    <!-- ======= Portfolio Section ======= -->
-    <!-- <section id="portfolio" class="portfolio">
+		<!-- ======= Portfolio Section ======= -->
+		<!-- <section id="portfolio" class="portfolio">
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
@@ -589,47 +688,54 @@
 
       </div>
     </section> -->
-    <!-- End Portfolio Section -->
+		<!-- End Portfolio Section -->
 
-    <!-- ======= Team Section ======= -->
-    <section id="team" class="team section-bg">
-      <div class="container">
+		<!-- ======= Team Section ======= -->
+		<section id="team" class="team section-bg">
+			<div class="container">
 
-        <div class="section-title" data-aos="fade-up">
-          <h2>Best freelancers</h2>
-          <p>Les freelancers brillants qui utilisent souvent notr plateforme pour leur business</p>
-        </div>
+				<div class="section-title" data-aos="fade-up">
+					<h2>Best freelancers</h2>
+					<p>Les freelancers brillants qui utilisent souvent notr
+						plateforme pour leur business</p>
+				</div>
 
-		<div class="row">
-		
-		 <c:forEach var="freelancer" items="${requestScope.freelancers}" end="3">
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="100">
-              <div class="member-img">
-                <img src="/freelanceProject/VUE/assetsProfileFreelancer/img/${ freelancer.rib }.jpg" class="img-fluid" alt="">
-                <!-- /freelanceProject/VUE/assets/img/team/team-1.jpg -->
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4><c:out value="${ freelancer.nom } ${ freelancer.prenom }" /></h4>
-                <span><c:out value="${ freelancer.profession }" /></span>
-              </div>
-            </div>
-          </div>
-          </c:forEach>
+				<div class="row">
 
-        </div>
+					<c:forEach var="freelancer" items="${requestScope.freelancers}"
+						end="3">
+						<div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+							<div class="member" data-aos="fade-up" data-aos-delay="100">
+								<div class="member-img">
+									<img
+										src="/freelanceProject/VUE/assetsProfileFreelancer/img/${ freelancer.rib }.jpg"
+										class="img-fluid" alt="">
+									<!-- /freelanceProject/VUE/assets/img/team/team-1.jpg -->
+									<div class="social">
+										<a href=""><i class="bi bi-twitter"></i></a> <a href=""><i
+											class="bi bi-facebook"></i></a> <a href=""><i
+											class="bi bi-instagram"></i></a> <a href=""><i
+											class="bi bi-linkedin"></i></a>
+									</div>
+								</div>
+								<div class="member-info">
+									<h4>
+										<c:out value="${ freelancer.nom } ${ freelancer.prenom }" />
+									</h4>
+									<span><c:out value="${ freelancer.profession }" /></span>
+								</div>
+							</div>
+						</div>
+					</c:forEach>
 
-      </div>
-    </section><!-- End Team Section -->
+				</div>
 
-    <!-- ======= Pricing Section ======= -->
-    <!-- <section id="pricing" class="pricing">
+			</div>
+		</section>
+		<!-- End Team Section -->
+
+		<!-- ======= Pricing Section ======= -->
+		<!-- <section id="pricing" class="pricing">
       <div class="container">
 
         <div class="section-title">
@@ -694,154 +800,167 @@
 
       </div>
     </section> -->
-    <!-- End Pricing Section -->
+		<!-- End Pricing Section -->
 
-    <!-- ======= F.A.Q Section ======= -->
-    <section id="faq" class="faq">
-      <div class="container">
+		<!-- ======= F.A.Q Section ======= -->
+		<section id="faq" class="faq">
+			<div class="container">
 
-        <div class="section-title" data-aos="fade-up">
-          <h2>Frequently Asked Questions</h2>
-        </div>
+				<div class="section-title" data-aos="fade-up">
+					<h2>Frequently Asked Questions</h2>
+				</div>
 
-        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-5">
-            <i class="ri-question-line"></i>
-            <h4>Non consectetur a erat nam at lectus urna duis?</h4>
-          </div>
-          <div class="col-lg-7">
-            <p>
-              Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-            </p>
-          </div>
-        </div><!-- End F.A.Q Item-->
+				<div class="row faq-item d-flex align-items-stretch"
+					data-aos="fade-up" data-aos-delay="100">
+					<div class="col-lg-5">
+						<i class="ri-question-line"></i>
+						<h4>Pourquoi nous choisir?</h4>
+					</div>
+					<div class="col-lg-7">
+						<p>Nous offrons une plateforme pour que chaque entreprise dans
+							le monde puisse trouver le bon freelancer afin de développer son
+							entreprise, sa marque ou son rêve...</p>
+					</div>
+				</div>
+				<!-- End F.A.Q Item-->
 
-        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-          <div class="col-lg-5">
-            <i class="ri-question-line"></i>
-            <h4>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h4>
-          </div>
-          <div class="col-lg-7">
-            <p>
-              Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
-            </p>
-          </div>
-        </div><!-- End F.A.Q Item-->
+				<div class="row faq-item d-flex align-items-stretch"
+					data-aos="fade-up" data-aos-delay="200">
+					<div class="col-lg-5">
+						<i class="ri-question-line"></i>
+						<h4>Pourquoi nous choisir?</h4>
+					</div>
+					<div class="col-lg-7">
+						<p>Nous offrons une plateforme pour que chaque entreprise dans
+							le monde puisse trouver le bon freelancer afin de développer son
+							entreprise, sa marque ou son rêve...</p>
+					</div>
+				</div>
+				<!-- End F.A.Q Item-->
 
-        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-          <div class="col-lg-5">
-            <i class="ri-question-line"></i>
-            <h4>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?</h4>
-          </div>
-          <div class="col-lg-7">
-            <p>
-              Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus.
-            </p>
-          </div>
-        </div><!-- End F.A.Q Item-->
+				<div class="row faq-item d-flex align-items-stretch"
+					data-aos="fade-up" data-aos-delay="300">
+					<div class="col-lg-5">
+						<i class="ri-question-line"></i>
+						<h4>Pourquoi nous choisir?</h4>
+					</div>
+					<div class="col-lg-7">
+						<p>Nous offrons une plateforme pour que chaque entreprise dans
+							le monde puisse trouver le bon freelancer afin de développer son
+							entreprise, sa marque ou son rêve...</p>
+					</div>
+				</div>
+				<!-- End F.A.Q Item-->
 
-        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-          <div class="col-lg-5">
-            <i class="ri-question-line"></i>
-            <h4>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h4>
-          </div>
-          <div class="col-lg-7">
-            <p>
-              Aperiam itaque sit optio et deleniti eos nihil quidem cumque. Voluptas dolorum accusantium sunt sit enim. Provident consequuntur quam aut reiciendis qui rerum dolorem sit odio. Repellat assumenda soluta sunt pariatur error doloribus fuga.
-            </p>
-          </div>
-        </div><!-- End F.A.Q Item-->
+				<div class="row faq-item d-flex align-items-stretch"
+					data-aos="fade-up" data-aos-delay="400">
+					<div class="col-lg-5">
+						<i class="ri-question-line"></i>
+						<h4>Pourquoi nous choisir?</h4>
+					</div>
+					<div class="col-lg-7">
+						<p>Nous offrons une plateforme pour que chaque entreprise dans
+							le monde puisse trouver le bon freelancer afin de développer son
+							entreprise, sa marque ou son rêve...</p>
+					</div>
+				</div>
+				<!-- End F.A.Q Item-->
 
-        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">
-          <div class="col-lg-5">
-            <i class="ri-question-line"></i>
-            <h4>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h4>
-          </div>
-          <div class="col-lg-7">
-            <p>
-              Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
-            </p>
-          </div>
-        </div><!-- End F.A.Q Item-->
+			</div>
+		</section>
+		<!-- End F.A.Q Section -->
 
-      </div>
-    </section><!-- End F.A.Q Section -->
+		<!-- ======= Contact Section ======= -->
+		<section id="contact" class="contact">
+			<div class="container">
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
+				<div class="section-title" data-aos="fade-up">
+					<h2>Contacter nous</h2>
+				</div>
 
-        <div class="section-title" data-aos="fade-up">
-          <h2>Contacter nous</h2>
-        </div>
+				<div class="row">
 
-        <div class="row">
+					<div class="col-lg-4 col-md-6" data-aos="fade-up"
+						data-aos-delay="100">
+						<div class="contact-about">
+							<h3>Freelancing</h3>
+							<p>la meilleure plateforme pour mettre en relation le
+								meilleur freelancer avec le bon service afin de développer votre
+								entreprise, votre marque ou votre rêve.</p>
+							<div class="social-links">
+								<a href="#" class="twitter"><i class="bi bi-twitter"></i></a> <a
+									href="#" class="facebook"><i class="bi bi-facebook"></i></a> <a
+									href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+								<a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+							</div>
+						</div>
+					</div>
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="contact-about">
-              <h3>Freelancing</h3>
-              <p>la meilleure plateforme pour mettre en relation le meilleur freelancer avec le bon service afin de développer votre entreprise, votre marque ou votre rêve.</p>
-              <div class="social-links">
-                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
+					<div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up"
+						data-aos-delay="200">
+						<div class="info">
+							<div>
+								<i class="ri-map-pin-line"></i>
+								<p>Avenue Mohammed Ben Abdallah Regragui, Madinat Al Irfane,
+									BP 713, Agdal Rabat, Maroc</p>
+							</div>
 
-          <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
-            <div class="info">
-              <div>
-                <i class="ri-map-pin-line"></i>
-                <p>Avenue Mohammed Ben Abdallah Regragui, Madinat Al Irfane, BP 713, Agdal Rabat, Maroc</p>
-              </div>
+							<div>
+								<i class="ri-mail-send-line"></i>
+								<p>n.mhirich@um5s.net.ma</p>
+							</div>
 
-              <div>
-                <i class="ri-mail-send-line"></i>
-                <p>n.mhirich@um5s.net.ma</p>
-              </div>
+							<div>
+								<i class="ri-phone-line"></i>
+								<p>(+212) 5 37 68 60 78</p>
+							</div>
 
-              <div>
-                <i class="ri-phone-line"></i>
-                <p>(+212) 5 37 68 60 78</p>
-              </div>
+						</div>
+					</div>
 
-            </div>
-          </div>
+					<div class="col-lg-5 col-md-12" data-aos="fade-up"
+						data-aos-delay="300">
+						<form action="/freelanceProject/VUE/forms/contact.php"
+							method="post" role="form" class="php-email-form">
+							<div class="form-group">
+								<input type="text" name="name" class="form-control" id="name"
+									placeholder="Your Name" required>
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control" name="email" id="email"
+									placeholder="Your Email" required>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" name="subject"
+									id="subject" placeholder="Subject" required>
+							</div>
+							<div class="form-group">
+								<textarea class="form-control" name="message" rows="5"
+									placeholder="Message" required></textarea>
+							</div>
+							<div class="my-3">
+								<div class="loading">Loading</div>
+								<div class="error-message"></div>
+								<div class="sent-message">Your message has been sent.
+									Thank you!</div>
+							</div>
+							<div class="text-center">
+								<button type="submit">Envoyer Message</button>
+							</div>
+						</form>
+					</div>
 
-          <div class="col-lg-5 col-md-12" data-aos="fade-up" data-aos-delay="300">
-            <form action="/freelanceProject/VUE/forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Envoyer Message</button></div>
-            </form>
-          </div>
+				</div>
 
-        </div>
+			</div>
+		</section>
+		<!-- End Contact Section -->
 
-      </div>
-    </section><!-- End Contact Section -->
+	</main>
+	<!-- End #main -->
 
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <%@ include file="Footer.jsp" %>
+	<!-- ======= Footer ======= -->
+	<%@ include file="Footer.jsp"%>
 
 </body>
 

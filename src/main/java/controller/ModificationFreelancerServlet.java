@@ -78,16 +78,14 @@ public class ModificationFreelancerServlet extends HttpServlet {
         Freelancer freelancer = (Freelancer) session.getAttribute("user");
         
         try {
-            if(oldPassword.equals(freelancer.getPassword())) {
-            boolean updateFreelancer = freelancerDAO.update(
-                    new Freelancer(nom, prenom, email, newPassword, physical_address, profession, description, freelancer.getRib()));
+            Freelancer newFreelancer = new Freelancer(nom, prenom, email, newPassword, physical_address, profession, description, freelancer.getRib());
+            boolean updateFreelancer = freelancerDAO.update(newFreelancer);
             
-            if(updateFreelancer)    out.println("Modifications effectuées avec succes!");
-            else    out.println("Modifications echouées!");
-            
-            } else {
-                
+            if(updateFreelancer) {
+                session.setAttribute("user", newFreelancer);
+                System.out.println("Modifications effectuées avec succes!");
             }
+            else    System.out.println("Modifications echouées!");
             
             this.getServletContext().getRequestDispatcher("/ProfileFreelancer").forward(request, response);
         } catch (SQLException e) {

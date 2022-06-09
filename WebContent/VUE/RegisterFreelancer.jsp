@@ -20,6 +20,7 @@
 	<link rel="stylesheet" type="text/css" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
 	<!-- Main Style Css -->
     <link rel="stylesheet" href="CSS/styleFreelancerRegistration.css"/>
+<title>S'inscrire</title>
 </head>
 
 <body>

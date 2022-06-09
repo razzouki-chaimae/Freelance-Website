@@ -31,7 +31,7 @@ public class LogoutFreelancerServlet extends HttpServlet {
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 	    HttpSession session = request.getSession();
 	    session.invalidate();
-	    request.getRequestDispatcher("/VUE/index.jsp").forward(request, response);
+	    request.getRequestDispatcher("/").forward(request, response);
 	}
 
 	/**

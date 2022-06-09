@@ -6,6 +6,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 import model.Entreprise;
 
 import java.io.IOException;
@@ -61,15 +62,19 @@ public class RegisterEntrepriseServlet extends HttpServlet {
         String emailEntreprise = request.getParameter("company_email");
         String password = request.getParameter("company_password");
         String adressePhysique = request.getParameter("company_physical_address");
+        String description = request.getParameter("company_description");
         String credit_card_owner = request.getParameter("credit_card_owner");
         long credit_card_number = Long.parseLong(request.getParameter("credit_card_number"));
         String expiry_date = request.getParameter("expiry_date");
         String cvc_cvv = request.getParameter("cvc_cvv");
         
         try {
-            boolean addEntreprise = entrepriseDAO.add(
-                    new Entreprise(nomEntreprise, emailEntreprise, password, numeroTelephone, adressePhysique, domaine, credit_card_number));
-            out.println("Bienvenu "+nomEntreprise);
+            Entreprise entreprise = new Entreprise(nomEntreprise, emailEntreprise, password, numeroTelephone, adressePhysique, domaine, description, credit_card_number);
+            boolean addEntreprise = entrepriseDAO.add(entreprise);
+            //out.println("Bienvenu "+nomEntreprise);
+            HttpSession session = request.getSession();
+            session.setAttribute("user", entreprise);
+            this.getServletContext().getRequestDispatcher("/ProfileEntrepriseServlet").forward(request, response);
         } catch (SQLException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();

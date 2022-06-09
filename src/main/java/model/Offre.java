@@ -10,6 +10,7 @@ public class Offre {
     private String skills;
     private Long entreprise;
     private Long freelancer;
+    boolean done;
     
     public Offre() {
         super();
@@ -27,7 +28,30 @@ public class Offre {
         this.entreprise = entreprise;
         this.freelancer = freelancer;
     }
-    
+    public Offre(String titre, String description, double budget, int deadline, String skills,
+            Long entreprise, Long freelancer) {
+        super();
+        this.titre = titre;
+        this.description = description;
+        this.budget = budget;
+        this.deadline = deadline;
+        this.skills = skills;
+        this.entreprise = entreprise;
+        this.freelancer = freelancer;
+    }
+    public Offre(int projectId, String titre, String description, double budget, int deadline, String skills,
+            Long entreprise, Long freelancer, boolean done) {
+        super();
+        this.projectId = projectId;
+        this.titre = titre;
+        this.description = description;
+        this.budget = budget;
+        this.deadline = deadline;
+        this.skills = skills;
+        this.entreprise = entreprise;
+        this.freelancer = freelancer;
+        this.done = done;
+    }
     public int getProjectId() {
         return projectId;
     }
@@ -76,5 +100,16 @@ public class Offre {
     public void setFreelancer(Long freelancer) {
         this.freelancer = freelancer;
     }
-
+    public boolean isDone() {
+        return done;
+    }
+    public void setDone(boolean done) {
+        this.done = done;
+    }
+    @Override
+    public String toString() {
+        return "Offre [projectId=" + projectId + ", titre=" + titre + ", description=" + description + ", budget="
+                + budget + ", deadline=" + deadline + ", skills=" + skills + ", entreprise=" + entreprise
+                + ", freelancer=" + freelancer + "]";
+    }
 }
